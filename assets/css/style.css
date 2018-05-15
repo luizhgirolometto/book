@@ -472,18 +472,18 @@ color: #f0f0f0;
 }
 
 .tab-find {
-    background: #b12f7a;
+    background: ##cc3e51;
 }
 .nav-tab-find {
-    background: #891f5a;
-    border-color:#891f5a;
+    background: #af212a;
+    border-color:#af212a;
     margin: 0 -15px 40px -15px;
 }
 .nav-tab-find>li.active>a, .nav-tab-find>li.active>a:focus, .nav-tab-find>li.active>a:hover {
     color: #fff;
     cursor: default;
-    background-color: #b12f7a;
-    border: 1px solid #b12f7a;
+    background-color: ##cc3e51;
+    border: 1px solid ##cc3e51;
     border-bottom-color: transparent;
     font-style: normal;
     padding: 11px;

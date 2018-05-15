@@ -25,8 +25,8 @@ require 'admin/includes/'.$textFile.$extension;
 							<li><a href = "<?php echo base_url(); ?>Welcome"><img src="<?php echo base_url(); ?>assets/images/patient-login/m-1.png" />Olá,<?php echo $username; ?> </a></li>
 							<li><a href = "<?php echo base_url(); ?>Logout"><img src="<?php echo base_url(); ?>assets/images/home/2.png" />Sair </a></li>
 						<?php } else{ ?>
-							<li ><a href = "<?php echo base_url(); ?>Login/presignup"><img src="<?php echo base_url(); ?>assets/images/home/1.png" />Entrar </a></li>
-							<li onclick="mysigninFunction()" data-toggle="modal" class="log-index" data-target="#myModal"><img src="<?php echo base_url(); ?>assets/images/home/2.png" />Cadastrar-se</li>
+							<li ><a href = "<?php echo base_url(); ?>Login/presignup"><img src="<?php echo base_url(); ?>assets/images/home/1.png" />Cadastrar-se </a></li>
+							<li onclick="mysigninFunction()" data-toggle="modal" class="log-index" data-target="#myModal"><img src="<?php echo base_url(); ?>assets/images/home/2.png" />Entrar</li>
 						<?php } ?>
 					</ul>
                 </div>
