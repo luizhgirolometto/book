@@ -19,8 +19,7 @@ $lang['login_patient_sigup_A5'] = "Faminino";
 $lang['login_patient_sigup_A6'] = "Eu aceito os termos e condições";
 $lang['login_patient_sigup_A7'] = "Continuar";
 $lang['login_patient_sigup_A8'] = "Você vai adorar estar no MarqueHora";
-$lang['login_sigup_B2'] = "I'm a Doctor / health Quicker way for your patient to schedule an appointment. 
-online for free!care provider subtitle";
+$lang['login_sigup_B2'] = "A maneira mais rápida de encontrar novos clientes.";
 $lang['login_sigup_B3'] = "Tipo";
 $lang['login_sigup_B4'] = "Primeiro nome";
 $lang['login_sigup_B5'] = "Sobrenome";
