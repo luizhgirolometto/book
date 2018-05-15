@@ -52,6 +52,6 @@ $lang['login_patient_sigup_A9'] = "Mais de 5 milhões de clientes tem acesso aos
 $lang['login_patient_sigup_A10'] = "Deixe os cleintes agendar horários com você instantaneamente.";
 $lang['login_patient_sigup_A11'] = "Inscreva-se para começar agendar seus horários agora mesmo!";
 $lang['login_patient_sigup_A19'] = "Mais de 5 milhões de clientes tem acesso aos profissionais do MarqueHora.";
-$lang['login_patient_sigup_A20'] = "Deixe os cleintes agendar horários com você instantaneamente.";
+$lang['login_patient_sigup_A20'] = "Deixe os clientes agendar horários com você instantaneamente.";
 $lang['login_patient_sigup_A21'] = "Inscreva-se para começar agendar seus horários agora mesmo!";
  ?>
