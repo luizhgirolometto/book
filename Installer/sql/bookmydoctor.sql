@@ -60,28 +60,6 @@ CREATE TABLE `affilliated_hospitals` (
 -- Dumping data for table `affilliated_hospitals`
 --
 
-INSERT INTO `affilliated_hospitals` (`id`, `hospital_name`, `image`) VALUES
-(1, 'Burdenko General Military Clinical Hospital', ''),
-(2, 'City Clinical Hospital No. 50', ''),
-(3, 'European Medical Centre Group', ''),
-(4, 'Russian Children\'s Clinical Hospital', ''),
-(5, 'American Clinic', ''),
-(6, 'Amrita Institute of Medical Sciences', ''),
-(7, 'Aster Medcity', ''),
-(8, 'Lakeshore Hospital', ''),
-(9, 'Medical Trust Hospital', ''),
-(10, 'Lisie Hospital', ''),
-(11, 'Rajagiri Hospital', ''),
-(12, 'Renai medicity', ''),
-(13, 'Lourdes Hospital', ''),
-(14, 'Sunrise Hospital', ''),
-(15, 'Chettinad Health City', ''),
-(16, 'Cloudnine Hospitals', ''),
-(17, 'Dr. Mohan’s Diabetes Specialities Centre', ''),
-(18, 'Fortis Malar Hospital', ''),
-(19, 'Global Hospitals & Health City', ''),
-(20, 'Government General Hospital', '');
-
 -- --------------------------------------------------------
 
 --
@@ -187,12 +165,8 @@ CREATE TABLE `cities` (
 --
 
 INSERT INTO `cities` (`id`, `city`, `state`, `country`, `zip`, `latitude`, `longitude`, `short_lat`, `short_lon`) VALUES
-(1, 'Chennai', 'Tamil Nadu', 'India', '', '13.0826802', '80.27071840000008', '13', '80'),
-(2, 'Bengaluru', 'Karnataka', 'India', '', '12.9715987', '77.59456269999998', '12', '77'),
-(3, 'Kolkata', 'West Bengal', 'India', '', '22.572646', '88.36389499999996', '22', '88'),
-(4, 'Mumbai', 'Maharashtra', 'India', '', '19.0759837', '72.87765590000004', '19', '72'),
-(5, 'Hyderabad', 'Telangana', 'India', '', '17.385044', '78.486671', '17', '78'),
-(7, 'Pune', 'Maharashtra', 'India', '', '18.5204303', '73.85674369999992', '18', '73');
+(1, 'Pato Branco', 'Paraná', 'Brasil', '', '26.2297202', '52.6711356', '26', '52'),
+(2, 'Bom Sucesso do Sul', 'Paraná', 'Brasil', '', '26.0735951', '52.8358032', '26', '52');
 
 -- --------------------------------------------------------
 
