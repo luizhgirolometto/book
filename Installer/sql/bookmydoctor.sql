@@ -137,9 +137,9 @@ CREATE TABLE `center_packages` (
 --
 
 INSERT INTO `center_packages` (`id`, `package_name`, `package_price`, `package_period`) VALUES
-(1, 'silver', '50', '45 days'),
-(2, 'gold', '100', '4 months'),
-(3, 'diamond', '1000', '1 year');
+(1, 'silver', '50', '45 dias'),
+(2, 'gold', '100', '4 meses'),
+(3, 'diamond', '1000', '1 ano');
 
 -- --------------------------------------------------------
 
@@ -378,7 +378,7 @@ INSERT INTO `countries` (`id_countries`, `name`, `iso_alpha2`, `iso_alpha3`, `is
 (27, 'Bosnia and Herzegovina', 'BA', 'BIH', 70, 'BAM', 'Marka', 'KM', 'BA.png'),
 (28, 'Botswana', 'BW', 'BWA', 72, 'BWP', 'Pula', 'P', 'BW.png'),
 (29, 'Bouvet Island', 'BV', 'BVT', 74, 'NOK', 'Krone', 'kr', 'BV.png'),
-(30, 'Brazil', 'BR', 'BRA', 76, 'BRL', 'Real', 'R$', 'BR.png'),
+(30, 'Brasil', 'BR', 'BRA', 76, 'BRL', 'Real', 'R$', 'BR.png'),
 (31, 'British Indian Ocean Territory', 'IO', 'IOT', 86, 'USD', 'Dollar', '$', 'IO.png'),
 (32, 'British Virgin Islands', 'VG', 'VGB', 92, 'USD', 'Dollar', '$', 'VG.png'),
 (33, 'Brunei', 'BN', 'BRN', 96, 'BND', 'Dollar', '$', 'BN.png'),
