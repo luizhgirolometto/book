@@ -157,7 +157,11 @@
                             <input type="text" name="lgl11" placeholder="GET THE APP" class="form-control required regcom" >
                             <span class="glyphicon  form-control-feedback"></span>
                           </div>
-						  
+						  <div class="form-group has-feedback">
+                            <label for="exampleInputEmail1">Make appointments on the go, right from your smartphone, with our top-rated mobile app</label>
+                            <input type="text" name="lgl12" placeholder="Make appointments on the go, right from your smartphone, with our top-rated mobile app" class="form-control required regcom" >
+                            <span class="glyphicon  form-control-feedback"></span>
+                          </div>
 						  <div class="form-group has-feedback">
                             <label for="exampleInputEmail1">Get it on!</label>
                             <input type="text" name="lgl13" placeholder="Get it on!" class="form-control required regcom" >
@@ -178,7 +182,12 @@
                             <input type="text" name="lgl16" placeholder="CITIES" class="form-control required regcom" >
                             <span class="glyphicon  form-control-feedback"></span>
                           </div>
-						 up has-feedback">
+						  <div class="form-group has-feedback">
+                            <label for="exampleInputEmail1">Make appointments on the go, right from your smartphone, with our top-rated mobile app.</label>
+                            <input type="text" name="lgl17" placeholder="Make appointments on the go, right from your smartphone, with our top-rated mobile app." class="form-control required regcom" >
+                            <span class="glyphicon  form-control-feedback"></span>
+                          </div>
+						  <div class="form-group has-feedback">
                             <label for="exampleInputEmail1"> By E-mail</label>
                             <input type="text" name="lgl18" placeholder=" By E-mail" class="form-control required regcom" >
                             <span class="glyphicon  form-control-feedback"></span>

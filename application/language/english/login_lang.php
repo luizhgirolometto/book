@@ -19,7 +19,12 @@ $lang['login_patient_sigup_A5'] = "Faminino";
 $lang['login_patient_sigup_A6'] = "Eu aceito os termos e condições";
 $lang['login_patient_sigup_A7'] = "Continuar";
 $lang['login_patient_sigup_A8'] = "Você vai adorar estar no MarqueHora";
+<<<<<<< HEAD
+$lang['login_sigup_B2'] = "I'm a Doctor / health Quicker way for your patient to schedule an appointment. 
+online for free!care provider subtitle";
+=======
 $lang['login_sigup_B2'] = "A maneira mais rápida de encontrar novos clientes.";
+>>>>>>> feb5788bbd87b35031d28f78f2a1d7ad0f687762
 $lang['login_sigup_B3'] = "Tipo";
 $lang['login_sigup_B4'] = "Primeiro nome";
 $lang['login_sigup_B5'] = "Sobrenome";
@@ -52,6 +57,10 @@ $lang['login_patient_sigup_A9'] = "Mais de 5 milhões de clientes tem acesso aos
 $lang['login_patient_sigup_A10'] = "Deixe os cleintes agendar horários com você instantaneamente.";
 $lang['login_patient_sigup_A11'] = "Inscreva-se para começar agendar seus horários agora mesmo!";
 $lang['login_patient_sigup_A19'] = "Mais de 5 milhões de clientes tem acesso aos profissionais do MarqueHora.";
+<<<<<<< HEAD
+$lang['login_patient_sigup_A20'] = "Deixe os cleintes agendar horários com você instantaneamente.";
+=======
 $lang['login_patient_sigup_A20'] = "Deixe os clientes agendar horários com você instantaneamente.";
+>>>>>>> feb5788bbd87b35031d28f78f2a1d7ad0f687762
 $lang['login_patient_sigup_A21'] = "Inscreva-se para começar agendar seus horários agora mesmo!";
  ?>
