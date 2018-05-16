@@ -166,7 +166,8 @@ CREATE TABLE `cities` (
 
 INSERT INTO `cities` (`id`, `city`, `state`, `country`, `zip`, `latitude`, `longitude`, `short_lat`, `short_lon`) VALUES
 (1, 'Pato Branco', 'Paraná', 'Brasil', '', '26.2297202', '52.6711356', '26', '52'),
-(2, 'Bom Sucesso do Sul', 'Paraná', 'Brasil', '', '26.0735951', '52.8358032', '26', '52');
+(2, 'Bom Sucesso do Sul', 'Paraná', 'Brasil', '', '26.0735951', '52.8358032', '26', '52'),
+(3, 'Francisco Beltrão', 'Paraná', 'Brasil', '', '26.0735951', '52.8358032', '26', '52');
 
 -- --------------------------------------------------------
 
@@ -1416,27 +1417,24 @@ CREATE TABLE `specialty_categories` (
 --
 
 INSERT INTO `specialty_categories` (`id`, `specialty_name`) VALUES
-(1, 'Pediatrics'),
-(2, 'Audiology'),
-(3, 'General Medicine'),
-(4, 'Family Medicine'),
-(5, 'Cardiology'),
-(6, 'Chemical Pathology'),
-(7, 'Dentistry'),
-(8, 'Diagnostic Radiology'),
-(9, 'Electrodiagnostic Medicine'),
-(10, 'Gastroenterology'),
-(11, 'Hematology'),
-(12, 'Massage Therapy'),
-(13, 'Maternal-Fetal Medicine'),
-(14, 'Nephrology'),
-(15, 'Neurology'),
-(16, 'Diabetology'),
-(23, 'manu manu'),
-(24, 'rajkumar'),
-(33, 'Diabetologyy'),
-(35, 'sdf'),
-(36, 'zsdds');
+(1, 'Manicure'),
+(2, 'Pedicure'),
+(3, 'Manicure e Pedicure '),
+(4, 'Corte '),
+(5, 'Tintura no Cabelo '),
+(6, 'Escova progressiva'),
+(7, 'Maquiagem '),
+(8, 'Sobrancelha'),
+(9, 'Depilação '),
+(10, 'Peeling'),
+(11, 'Nutrição'),
+(12, 'Psicologia'),
+(13, 'Massagem'),
+(14, 'Lifting facial'),
+(15, 'Preenchimento'),
+(16, 'Botox'),
+(23, 'Pilates'),
+(24, 'Emagrecimento');
 
 -- --------------------------------------------------------
 
