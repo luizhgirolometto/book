@@ -1,5 +1,5 @@
 <?php defined("BASEPATH") OR exit("No direct script access allowed");
-$config["base_url"] = "http://localhost/marque";
+$config["base_url"] = "http://localhost/book";
 $config["index_page"] = "index.php";
 $config["uri_protocol"]  = "REQUEST_URI"; 
 $config["url_suffix"] = " ";

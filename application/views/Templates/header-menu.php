@@ -46,8 +46,7 @@ require 'admin/includes/'.$textFile.$extension;
                         
                         <li><a href = "<?php echo base_url(); ?>General/contact"> Contato</a></li>
                         
-                        <li><a href="javascript:void(0);"><?php if($lgfaq){ echo $lgfaq; }else { ?> FAQ<?php }?> </a></li>
-                        <li><a href="javascript:void(0);"><?php if($lgnlog){ echo $lgnlog; }else { ?> Blog<?php }?>  </a></li>
+                        
                         
                     </ul>
                 </div>

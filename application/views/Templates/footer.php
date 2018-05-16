@@ -12,21 +12,26 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-2"></div>
-            <div class="col-lg-10">
+            <div class="col-lg-9">
                 <div class="menu-footer">
                     <ul>
-                        <li class="active"><a href="<?php echo base_url(); ?>"><?php if($this->lang->line('home_header_home')){ ?><?php echo $this->lang->line('home_header_home'); }else{ ?>Home<?php } ?></a>  </li>
-                        <li> <a href = "<?php echo base_url(); ?>General/aboutus"><?php if($this->lang->line('home_header_aboutus')){ ?><?php echo $this->lang->line('home_header_aboutus'); }else{ ?>About Us<?php } ?></a> </li>
-						
-                       
-                        <li><a href = "<?php echo base_url(); ?>General/contact"><?php if($this->lang->line('home_header_contact')){ ?><?php echo $this->lang->line('home_header_contact'); }else{ ?>Contact <?php } ?> </a></li>
-			
+                        <div class="col-lg-3">
+                            <li class="active"><a href="<?php echo base_url(); ?>"><?php if($this->lang->line('home_header_home')){ ?><?php echo $this->lang->line('home_header_home'); }else{ ?>Home<?php } ?></a>  </li>
+                        </div>
+                        <div class="col-lg-3">
+                            <li> <a href = "<?php echo base_url(); ?>General/aboutus"><?php if($this->lang->line('home_header_aboutus')){ ?><?php echo $this->lang->line('home_header_aboutus'); }else{ ?>About Us<?php } ?></a> </li>
+						</div>
+                       <div class="col-lg-3">
+                            <li><a href = "<?php echo base_url(); ?>General/contact"><?php if($this->lang->line('home_header_contact')){ ?><?php echo $this->lang->line('home_header_contact'); }else{ ?>Contact <?php } ?> </a></li>
+			           </div>  
                         <!--<li><a href="javascript:void(0);">Blog </a></li> -->
                         
                     </ul>
                     <div class="clearfix"></div>
                 </div>
             </div>
+            
+            
             <div class="col-lg-2"></div>
         </div>
         <div class="row">
@@ -86,5 +91,6 @@
         </div>
     </div>
 </footer>
-<!--footer-->
+<!--footer
 <a href="#" id="back-to-top" title="Back to top"><img src="<?php echo base_url(); ?>assets/images/home/btp.png"></a>
+-->
