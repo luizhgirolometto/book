@@ -1,15 +1,9 @@
 <?php defined("BASEPATH") OR exit("No direct script access allowed");
-<<<<<<< .mine
-$config["base_url"] = "http://localhost/book";
-=======
 
->>>>>>> .theirs
+//$config["base_url"] = "http://localhost/book";
+
 $config["base_url"] = "http://".$_SERVER["HTTP_HOST"].dirname($_SERVER["SCRIPT_NAME"]);
-<<<<<<< .mine
 
-=======
-
->>>>>>> .theirs
 $config["index_page"] = "index.php";
 
 $config["uri_protocol"]  = "REQUEST_URI"; 
