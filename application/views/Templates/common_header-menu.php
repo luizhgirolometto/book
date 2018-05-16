@@ -46,12 +46,9 @@
                     <ul class="nav navbar-nav nav-head animated fadeInDown">
                         <li class="active m-1"><a href="<?php echo base_url(); ?>"><?php if($this->lang->line('home_header_home')){ ?><?php echo $this->lang->line('home_header_home'); }else{ ?>Home<?php } ?><span class="sr-only">(current)</span></a></li>
                         <li><a href = "<?php echo base_url(); ?>General/aboutus"><?php if($this->lang->line('home_header_aboutus')){ ?><?php echo $this->lang->line('home_header_aboutus'); }else{ ?>About Us<?php }?></a></li>
-						<li><a href = "<?php echo base_url(); ?>General/terms"><?php if($this->lang->line('home_header_terms')){ ?><?php echo $this->lang->line('home_header_terms'); }else{ ?>Terms<?php }?> </a></li>
-                        <li><a href = "<?php echo base_url(); ?>General/careers"><?php if($this->lang->line('home_header_careers')){ ?><?php echo $this->lang->line('home_header_careers'); }else{ ?>Careers<?php }?> </a></li>
+						
                         <li><a href = "<?php echo base_url(); ?>General/contact"><?php if($this->lang->line('home_header_contact')){ ?><?php echo $this->lang->line('home_header_contact'); }else{ ?>Contact <?php }?> </a></li>
-						<li><a href="javascript:void(0);"><?php if($this->lang->line('home_header_faq')){ ?><?php echo $this->lang->line('home_header_faq'); }else{ ?>FAQ<?php }?> </a></li>
-                        <li><a href="javascript:void(0);"><?php if($this->lang->line('home_header_blog')){ ?><?php echo $this->lang->line('home_header_blog'); }else{ ?>Blog<?php }?>  </a></li>
-                        <li><a href="javascript:void(0);"><?php if($this->lang->line('home_header_doctorblog')){ ?><?php echo $this->lang->line('home_header_doctorblog'); }else{ ?>Doctor Blog<?php }?>  </a></li>
+						
                     </ul>
                 </div>
             </div>

@@ -13,9 +13,11 @@
         $extension = ".php"; 
         require 'admin/includes/'.$textFile.$extension;    ?>
 <input type="hidden" value="hospital" id="tabtakeparser" >
+<!--
 <div class="share animated zoomIn hvr-grow">
 	<img src="<?php echo base_url(); ?>assets/images/home/share.png"  alt=""/>
 </div>
+-->
 <!--patient-login search-->
 <div class="container-fluid srch-patient-log srch-patient-log-clinic">
 	<div class="container">

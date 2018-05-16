@@ -1,7 +1,8 @@
-<!-----------------slider---------------->
+<!-----------------slider--------------
 <div class="share animated zoomIn hvr-grow">
 	<img src="<?php echo base_url(); ?>assets/images/home/share.png"  alt=""/>
 </div>
+-->
 <div class="find-main col-lg-6 nopadding">
     <div class="find col-lg-1 nopadding">
         <img class="hvr-grow" src="<?php echo base_url(); ?>assets/images/home/find.png"  alt=""/>

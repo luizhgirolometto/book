@@ -137,9 +137,9 @@ CREATE TABLE `center_packages` (
 --
 
 INSERT INTO `center_packages` (`id`, `package_name`, `package_price`, `package_period`) VALUES
-(1, 'silver', '50', '45 days'),
-(2, 'gold', '100', '4 months'),
-(3, 'diamond', '1000', '1 year');
+(1, 'silver', '50', '45 dias'),
+(2, 'gold', '100', '4 meses'),
+(3, 'diamond', '1000', '1 ano');
 
 -- --------------------------------------------------------
 
@@ -166,7 +166,8 @@ CREATE TABLE `cities` (
 
 INSERT INTO `cities` (`id`, `city`, `state`, `country`, `zip`, `latitude`, `longitude`, `short_lat`, `short_lon`) VALUES
 (1, 'Pato Branco', 'Paraná', 'Brasil', '', '26.2297202', '52.6711356', '26', '52'),
-(2, 'Bom Sucesso do Sul', 'Paraná', 'Brasil', '', '26.0735951', '52.8358032', '26', '52');
+(2, 'Bom Sucesso do Sul', 'Paraná', 'Brasil', '', '26.0735951', '52.8358032', '26', '52'),
+(3, 'Francisco Beltrão', 'Paraná', 'Brasil', '', '26.0735951', '52.8358032', '26', '52');
 
 -- --------------------------------------------------------
 
@@ -377,7 +378,7 @@ INSERT INTO `countries` (`id_countries`, `name`, `iso_alpha2`, `iso_alpha3`, `is
 (27, 'Bosnia and Herzegovina', 'BA', 'BIH', 70, 'BAM', 'Marka', 'KM', 'BA.png'),
 (28, 'Botswana', 'BW', 'BWA', 72, 'BWP', 'Pula', 'P', 'BW.png'),
 (29, 'Bouvet Island', 'BV', 'BVT', 74, 'NOK', 'Krone', 'kr', 'BV.png'),
-(30, 'Brazil', 'BR', 'BRA', 76, 'BRL', 'Real', 'R$', 'BR.png'),
+(30, 'Brasil', 'BR', 'BRA', 76, 'BRL', 'Real', 'R$', 'BR.png'),
 (31, 'British Indian Ocean Territory', 'IO', 'IOT', 86, 'USD', 'Dollar', '$', 'IO.png'),
 (32, 'British Virgin Islands', 'VG', 'VGB', 92, 'USD', 'Dollar', '$', 'VG.png'),
 (33, 'Brunei', 'BN', 'BRN', 96, 'BND', 'Dollar', '$', 'BN.png'),
@@ -1416,27 +1417,24 @@ CREATE TABLE `specialty_categories` (
 --
 
 INSERT INTO `specialty_categories` (`id`, `specialty_name`) VALUES
-(1, 'Pediatrics'),
-(2, 'Audiology'),
-(3, 'General Medicine'),
-(4, 'Family Medicine'),
-(5, 'Cardiology'),
-(6, 'Chemical Pathology'),
-(7, 'Dentistry'),
-(8, 'Diagnostic Radiology'),
-(9, 'Electrodiagnostic Medicine'),
-(10, 'Gastroenterology'),
-(11, 'Hematology'),
-(12, 'Massage Therapy'),
-(13, 'Maternal-Fetal Medicine'),
-(14, 'Nephrology'),
-(15, 'Neurology'),
-(16, 'Diabetology'),
-(23, 'manu manu'),
-(24, 'rajkumar'),
-(33, 'Diabetologyy'),
-(35, 'sdf'),
-(36, 'zsdds');
+(1, 'Manicure'),
+(2, 'Pedicure'),
+(3, 'Manicure e Pedicure '),
+(4, 'Corte '),
+(5, 'Tintura no Cabelo '),
+(6, 'Escova progressiva'),
+(7, 'Maquiagem '),
+(8, 'Sobrancelha'),
+(9, 'Depilação '),
+(10, 'Peeling'),
+(11, 'Nutrição'),
+(12, 'Psicologia'),
+(13, 'Massagem'),
+(14, 'Lifting facial'),
+(15, 'Preenchimento'),
+(16, 'Botox'),
+(23, 'Pilates'),
+(24, 'Emagrecimento');
 
 -- --------------------------------------------------------
 

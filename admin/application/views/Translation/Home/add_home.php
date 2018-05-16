@@ -194,12 +194,11 @@
                             <input type="text" name="lang['home_common_D1']" placeholder="OUR LOCATION" class="form-control required regcom"  required="">
                             <span class="glyphicon  form-control-feedback"></span>
                           </div>
-	<!--					 <div class="form-group has-feedback">
+						 <div class="form-group has-feedback">
                             <label for="exampleInputEmail1">OUR LOCATION subtitle</label>
                             <input type="text" name="lang['home_common_D2']" placeholder="OUR LOCATION subtitle" class="form-control required regcom"  required="">
                             <span class="glyphicon  form-control-feedback"></span>
                           </div>
-   -->                       
 						 <div class="form-group has-feedback">
                             <label for="exampleInputEmail1">By E-mail: </label>
                             <input type="text" name="lang['home_common_D3']" placeholder="By E-mail: " class="form-control required regcom"  required="">
@@ -230,7 +229,11 @@
                             <input type="text" name="lang['home_common_D8']" placeholder="Copyright © 2015-2016 Techware Solution" class="form-control required regcom"  required="">
                             <span class="glyphicon  form-control-feedback"></span>
                           </div>	
-					
+					<div class="form-group has-feedback">
+                            <label for="exampleInputEmail1">Keep your</label>
+                            <input type="text" name="lang['home_common_D9']" placeholder="Keep your" class="form-control required regcom"  required="">
+                            <span class="glyphicon  form-control-feedback"></span>
+                          </div>
 
 						<div class="form-group has-feedback">
                             <label for="exampleInputEmail1">How It Works ?</label>
