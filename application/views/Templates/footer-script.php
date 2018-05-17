@@ -12,10 +12,11 @@
     <script src="<?php echo base_url(); ?>assets/js/parsley.min.js"></script>	
 	<script src="<?php echo base_url(); ?>assets/js/jquery.raty.min.js"></script>
 	<script src="<?php echo base_url(); ?>assets/js/filter.js"></script>
-<!---- calendar appointment---->	
+<!---- calendar appointment
 	<script src="<?php echo base_url(); ?>assets/js/appointment/cors.js"></script>
 	<script src="<?php echo base_url(); ?>assets/js/appointment/bootstrap-calendar.js"></script>
 	<script src="<?php echo base_url(); ?>assets/js/appointment/calendar.js"></script>
+--->	
 <!--- time picker ---->
 	<script src="<?php echo base_url(); ?>assets/js/jquery.timepicker.js"></script>
 	<script src="<?php echo base_url(); ?>assets/js/bootstrap-datepicker.js"></script>
@@ -25,3 +26,13 @@
 	<script src="<?php echo base_url(); ?>assets/js/developer.js"></script>	
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=<?php echo pull_settings()[0]->api_key; ?>&libraries=places"></script>
 	<script src="<?php echo base_url(); ?>assets/js/common.js"></script>
+<!---->	
+	
+	<script src="<?php echo base_url(); ?>assets/js/full/lib/moment.min.js"></script>
+	<script src="<?php echo base_url(); ?>assets/js/full/fullcalendar.min.js"></script>
+	<script src="<?php echo base_url(); ?>assets/js/full/locale/pt-br.js"></script>
+	<script src="<?php echo base_url(); ?>assets/js/full/gcal.js"></script>	
+	<script src="<?php echo base_url(); ?>assets/js/full/theme-chooser.js"></script>
+
+	
+	

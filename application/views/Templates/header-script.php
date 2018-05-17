@@ -14,11 +14,15 @@
 <!-- Theme style -->
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/AdminLTE.min.css">		
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/common.css"> 
-<!--  calendar --->
+<!--  calendar 
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/appointment/calendar.css">   
+--->	
 <!--common-head-css -->
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/jquery.timepicker.css">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/datepicker.css">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/responsive.css">
-
+<!--fullcalendar		 -->
+	<link href='https://use.fontawesome.com/releases/v5.0.6/css/all.css' rel='stylesheet'>
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/full/fullcalendar.min.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/full/fullcalendar.print.min.css" media='print'>
