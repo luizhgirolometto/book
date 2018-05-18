@@ -676,15 +676,15 @@ $(document).ready(function() {
                   navLinks: true, // can click day/week names to navigate views
                   editable: true,
                   eventLimit: true,
-                height: 650,
-                dayClick: function (date, view) {
-                    alert('Clicked on: ' + date.format());
-                    alert('Current view: ' + view.name);
+                height: 650
+                //dayClick: function (date, view) {
+                    //alert('Clicked on: ' + date.format());
+                    //alert('Current view: ' + view.name);
                     // change the day's background color just for fun
-                    $(this).css('background-color', 'red');
-                    $("#AddNew").css("display", "block");
-                    $("#stDate").val(date.format('DD/MM/YYYY'));
-                }
+                    //$/(this).css('background-color', 'red');
+                    //$("#AddNew").css("display", "block");
+                    //$("#stDate").val(date.format('DD/MM/YYYY'));
+                //}
             });
              //alert(doc);
              $('#calendar').fullCalendar('renderEvent', doc, true);

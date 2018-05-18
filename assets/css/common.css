@@ -15,8 +15,8 @@ text-rendering: auto;
 	}
 	.doctor_personal img{
 		
-		width: 200px;
-border-radius: 50%;
+		width: 100px;
+	border-radius: 50%;
 	}
 	.patient_personal img{
 		width: 200px;

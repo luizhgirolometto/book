@@ -26,3 +26,4 @@
 	<link href='https://use.fontawesome.com/releases/v5.0.6/css/all.css' rel='stylesheet'>
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/full/fullcalendar.min.css">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/full/fullcalendar.print.min.css" media='print'>
+	<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
