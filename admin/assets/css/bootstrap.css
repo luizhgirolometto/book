@@ -1202,7 +1202,7 @@ font-size:21px
 	color:#337ab7
 }
 a.text-primary:focus, a.text-primary:hover {
-	color:#c9302c
+	color:#286090
 }
 .text-success {
 	color:#3c763d
@@ -1233,7 +1233,7 @@ a.text-danger:focus, a.text-danger:hover {
 	background-color:#337ab7
 }
 a.bg-primary:focus, a.bg-primary:hover {
-	background-color:#c9302c
+	background-color:#286090
 }
 .bg-success {
 	background-color:#dff0d8
@@ -2710,22 +2710,22 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 .btn-primary.focus, .btn-primary:focus {
 	color:#fff;
-	background-color:#c9302c;
+	background-color:#286090;
 	border-color:#122b40
 }
 .btn-primary:hover {
 	color:#fff;
-	background-color:#c9302c;
-	border-color:#af212a
+	background-color:#286090;
+	border-color:#204d74
 }
 .btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary {
 	color:#fff;
-	background-color:#c9302c;
-	border-color:#af212a
+	background-color:#286090;
+	border-color:#204d74
 }
 .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
 	color:#fff;
-	background-color:#af212a;
+	background-color:#204d74;
 	border-color:#122b40
 }
 .btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary {
@@ -4185,7 +4185,7 @@ a.label:focus, a.label:hover {
 	background-color:#337ab7
 }
 .label-primary[href]:focus, .label-primary[href]:hover {
-	background-color:#c9302c
+	background-color:#286090
 }
 .label-success {
 	background-color:#5cb85c
