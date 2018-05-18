@@ -17,9 +17,8 @@
 		<?php if($end_date == '' & $trial_date >= $current_date  ){?>					
 			<div class="alert">
 				<button class="close" data-dismiss="alert" type="button">×</button>
-				<h3><?php if($lgdoctormod74){ echo $lgdoctormod74; }else { ?>Alert Message<?php } ?>:</h3>
-				<h4> <?php if($lgdoctormod75){ echo $lgdoctormod75; }else { ?>You are using 15 days free trial version.Once the trial period is expired , your details listing will be removed from Search Filter. Select any package to extend your service under Bookmydoc.<?php } ?>
-				</h4>
+				<h4><span>Aviso:</span></h4>
+				<h5> Você está usando uma versão de avaliação gratuita de 15 dias. Depois que o período de avaliação expirar, seus serviços não serão mais apresentados no filtro de pesquisa. Selecione qualquer pacote para estender seu serviço no MarqueHora</h3>
 			</div>								                                   
 		<?php } elseif($end_date < $current_date) { ?>							
 			<div class="alert">
@@ -30,56 +29,54 @@
 			</div>								                                         
 		<?php } else{ ?>
 		<?php } ?>
-			<div class="row">
-				<div class="col-lg-3"></div>
-				<div class="col-lg-6">
-					<div class="profile-head">
-						<div class="doctor_personal" >
-							<img src= "<?php if(!empty($doctor_personal->display_image)){ ?> <?php echo base_url().'admin/'.$doctor_personal->display_image; ?> <?php }else{ ?> <?php echo base_url(); ?>assets/images/login/doctor.png <?php } ?>" />	
-						</div>
-						<form method="post" id="doctor_imagefirst" enctype="multipart/form-data">
-							<input type="hidden" name="submitpatient1" value="submitpatient1" id="submitpatient1" >
-							<label><input type="file" name="display_image"  id="doctor_image" value="" style="opacity: 0;"><img class="docimg_img" src="<?php echo base_url(); ?>assets/images/patient-login/edit.png" />  </label>
-						</form>
+
+
+<!-- 			<div class="row img-profile">
+				
+							
+
+	 			<div class="col-lg-2 ">
+					<div class="doctor_personal" >
+						<label><input type="file" name="display_image"  id="doctor_image" value="" style="opacity: 0;"><img src= "<?php if(!empty($doctor_personal->display_image)){ ?> <?php echo base_url().'admin/'.$doctor_personal->display_image; ?> <?php }else{ ?> <?php echo base_url(); ?>assets/images/login/doctor.png <?php } ?>" />  </label>	
 					</div>
-					<div class="profile-head">
-						<h3><span><?php if($this->lang->line('doctor_slide_A1')){ ?><?php echo $this->lang->line('doctor_slide_A1'); }else{ ?>Welcome<?php } ?>,</span> <?php echo $doctor_personal->doctor_firstname;?> <?php echo $doctor_personal->doctor_lastname;?></h3>
-						<h4><span><?php if($this->lang->line('doctor_slide_A2')){ ?><?php echo $this->lang->line('doctor_slide_A2'); }else{ ?>Age<?php } ?>:</span> <?php echo $doctor_personal->doctor_age;?></h4>
-					</div>
+					<h4><span>Olá,</span> <?php echo $doctor_personal->doctor_firstname;?> <?php echo $doctor_personal->doctor_lastname;?></h4>							
+				
 				</div>
-				<div class="col-lg-3"></div>
-			</div>
-			<div class="row">
-				<div class="col-lg-offset-1 col-lg-10">
-					<div class="col-lg-12">
-						<div class="serch-main">
-							<div class="col-lg-8">
-								<h4><?php if($this->lang->line('doctor_slide_A3')){ ?><?php echo $this->lang->line('doctor_slide_A3'); }else{ ?>More than 5 million patients use bookmydoc to find doctors  every month.
-								Let them book appointments with use instantly<?php } ?></h4>
-							</div>
-							<div class="col-lg-4">
-								<a href = "<?php echo base_url(); ?>Doctor/Search">
-									<div class="search-lg-mn">
-										<img src="<?php echo base_url(); ?>assets/images/patient-login/sr.png"  />
-										<span><?php if($this->lang->line('doctor_slide_A4')){ ?><?php echo $this->lang->line('doctor_slide_A4'); }else{ ?>Search now<?php } ?></span>
-									</div>
-								</a>
-							</div>
-						</div>
+				<div class="col-lg-10 ">
+					<div id="calendar">											
 					</div>
+	        	
 				</div>
-			</div>
+
+			</div>	 -->
+	
+
+
+			
 		</div>
 	</div>
+	<div class="col-lg-12">
+	<div class="row">
+
 	<div class="container-fluid ">
 		<div class="tab-cnt-search">
-			<div class="container">
-				<ul class="nav nav-tabs  nav-tb dct-tab">
-					<li class="active"><a data-toggle="tab" href="#homes"><span><img src="<?php echo base_url(); ?>assets/images/patient-login/2.1.png" /> </span><?php if($this->lang->line('doctor_tab_A1')){ ?><?php echo $this->lang->line('doctor_tab_A1'); }else{ ?>Appointment<?php } ?></a></li>
-					<li><a data-toggle="tab" href="#menus1"><span><img src="<?php echo base_url(); ?>assets/images/patient-login/calen.png" /> </span><?php if($this->lang->line('doctor_tab_B1')){ ?><?php echo $this->lang->line('doctor_tab_B1'); }else{ ?>Calender Setting<?php } ?></a></li>
-					<li><a data-toggle="tab" href="#menus2"><span><img src="<?php echo base_url(); ?>assets/images/patient-login/2.3.png" /> </span><?php if($this->lang->line('doctor_tab_C1')){ ?><?php echo $this->lang->line('doctor_tab_C1'); }else{ ?>Settings<?php } ?></a></li>
-				</ul>
+			<div class="col-md-3">
+				<div class="container img-profile">				
+					<ul class="nav nav-pills nav-stacked col-md-3">
+						<li class="active img-profile"><a data-toggle="tab" href="#homes"><span>
+							<div class="doctor_personal" >
+								<label><input type="file" name="display_image"  id="doctor_image" value="" style="opacity: 0;"><img src= "<?php if(!empty($doctor_personal->display_image)){ ?> <?php echo base_url().'admin/'.$doctor_personal->display_image; ?> <?php }else{ ?> <?php echo base_url(); ?>assets/images/login/doctor.png <?php } ?>" />  </label>	
+							</div>
+							<h4><span>Olá,</span> <?php echo $doctor_personal->doctor_firstname;?> <?php echo $doctor_personal->doctor_lastname;?></h4>	
+
+
+						</li>
+						<li><a data-toggle="tab" href="#menus1"><span><img src="<?php echo base_url(); ?>assets/images/patient-login/calen.png" /> </span><?php if($this->lang->line('doctor_tab_B1')){ ?><?php echo $this->lang->line('doctor_tab_B1'); }else{ ?>Calender Setting<?php } ?></a></li>
+						<li><a data-toggle="tab" href="#menus2"><span><img src="<?php echo base_url(); ?>assets/images/patient-login/2.3.png" /> </span><?php if($this->lang->line('doctor_tab_C1')){ ?><?php echo $this->lang->line('doctor_tab_C1'); }else{ ?>Settings<?php } ?></a></li>
+					</ul>
+				</div>
 			</div>
+			<div class="col-md-9">
 			<div class="container-fluid tab-fluid">
 				<div class="container">
 					<div class="tab-content tb-patient">				
@@ -88,8 +85,8 @@
 							<div class="row">
 								<div class="container">
 									<div class="row">
-										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-											<div id="my-calendar">											
+										<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+											<div id="calendar">											
 											</div>
 										</div>
 									</div>
@@ -650,6 +647,7 @@
 					</div>
 				</div>
 			</div>
+		</div>	
 <!--patient-login-->
 	<div class="modal fade modal-wide" id="myModalmapbmd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
             aria-hidden="true">
@@ -672,3 +670,6 @@
 			</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
 	</div>					
+</div> <!-- md-12 -->				
+</div>
+</div>

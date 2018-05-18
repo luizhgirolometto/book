@@ -1202,6 +1202,28 @@ class Welcome extends CI_Controller {
 			echo json_encode(array());
 		}		
 	}
+/* === Get Doctor Events Method === */
+	public function getdoctorevents(){				
+		$id=$this->session->userdata['frontend_logged_in']['id'];
+		   	
+			$result = $this->Welcome_Model->getdoctoreventss($id);
+
+			$dates = array();	
+			foreach ($result as $resdetail){		
+				$date = date('Y-m-d',strtotime($resdetail->appointment_date));		
+				$dates[] = array(
+							title => $resdetail->patient_firstname,
+							start => $date."T". date("H:i", strtotime( $resdetail->appointment_time)),
+							end => $date."T". date("H:i", strtotime( $resdetail->end_time)),
+							allDay => false,
+							editable => true
+							
+						);
+
+			}
+			echo json_encode($dates);		
+
+	}	
 	public function getmultiple(){
 		$id=$this->session->userdata['frontend_logged_in']['id'];
 		if(isset($_POST)){

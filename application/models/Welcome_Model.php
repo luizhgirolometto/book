@@ -474,6 +474,17 @@ class Welcome_Model extends CI_Model
 		$result = $query->result();
 		return $result;				
 	}
+	function getdoctoreventss($doctorid){			
+		$this->db->select('appointment.id as id,appointment.*,patient.patient_firstname,patient.patient_sex,visit_categories.reason as reason,insurance_categories.insurance_name as insurance ');
+		$this->db->from('appointment');	
+		$this->db->where("appointment.doctor_id",$doctorid);		
+		$this->db->join('patient', 'FIND_IN_SET(patient.id, appointment.patient_id) > 0', 'left ');
+		$this->db->join('visit_categories', 'FIND_IN_SET(visit_categories.id, patient.visitation) > 0', 'left ');
+		$this->db->join('insurance_categories', 'FIND_IN_SET(insurance_categories.id, patient.insurance) > 0', 'left ');
+		$query = $this->db->get();
+		$result = $query->result();
+		return $result;				
+	}	
 	function getanotherappdate($date,$id){
 		$this->db->select('appointment.id as id,appointment.*,patient.patient_firstname,patient.patient_sex,visit_categories.reason as reason,insurance_categories.insurance_name as insurance');
 		$this->db->from('appointment');	

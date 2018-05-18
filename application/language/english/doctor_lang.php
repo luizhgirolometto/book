@@ -1,7 +1,7 @@
 <?php $lang['medicalprofile_lang'] = "medicalprofile_lang";
 $lang['page_name'] = "doctor_lang";
 $lang['language'] = "english";
-$lang['doctor_slide_A1'] = "Bom-vindo";
+$lang['doctor_slide_A1'] = "Bem-vindo";
 $lang['doctor_slide_A2'] = "Idade";
 $lang['doctor_slide_A3'] = "Mais de 5 milhões de usuários usam o MarqueHora para encontrar profissionais todos os meses. Deixe-os agendar compromissos com você também.";
 $lang['doctor_slide_A4'] = "Buscar agora";
