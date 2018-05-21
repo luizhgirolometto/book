@@ -663,6 +663,7 @@ $(document).ready(function() {
 
         success: function (doc) {
             console.log(doc);
+            console.log('$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$');
            
             $('#calendar').fullCalendar({
                   themeSystem: 'bootstrap4',

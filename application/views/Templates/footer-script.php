@@ -25,14 +25,13 @@
 	<script src="<?php echo base_url(); ?>assets/js/common.js"></script>
 	<script src="<?php echo base_url(); ?>assets/js/developer.js"></script>	
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=<?php echo pull_settings()[0]->api_key; ?>&libraries=places"></script>
-	<script src="<?php echo base_url(); ?>assets/js/common.js"></script>
 <!---->	
 	
 	<script src="<?php echo base_url(); ?>assets/js/full/lib/moment.min.js"></script>
 	<script src="<?php echo base_url(); ?>assets/js/full/fullcalendar.min.js"></script>
 	<script src="<?php echo base_url(); ?>assets/js/full/locale/pt-br.js"></script>
 	<script src="<?php echo base_url(); ?>assets/js/full/gcal.js"></script>	
-	<script src="<?php echo base_url(); ?>assets/js/full/theme-chooser.js"></script>
+	
 
 	
 	
