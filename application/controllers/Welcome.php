@@ -23,7 +23,7 @@ class Welcome extends CI_Controller {
 				$result = $this->Doctor_Pool($id,$_POST);
 			}							
 			$search_template['days'] = array('mon','tue','wed','thu','fri','sat','sun');
-			$search_template['Days'] = array('Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday');
+			$search_template['Days'] = array('Segunda','Terça','Quarta','Quinta','Sexta','Sábado','Domingo');
 			$search_template['doctor_pictures'] =$this->Welcome_Model->get_singledoctorpictures($id);					
 			$search_template['doctor_schedule'] =$this->Welcome_Model->get_singledoctorschedule($id);			
 			$search_template['doctor_personal'] =$this->Welcome_Model->get_singledoctor($id);		

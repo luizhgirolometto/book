@@ -662,8 +662,6 @@ $(document).ready(function() {
         url: base_url+"Welcome/getdoctorevents",
 
         success: function (doc) {
-            console.log(doc);
-            console.log('$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$');
            
             $('#calendar').fullCalendar({
                   themeSystem: 'bootstrap4',
