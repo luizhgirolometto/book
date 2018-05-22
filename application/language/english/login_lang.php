@@ -48,7 +48,7 @@ $lang['login_patient_sigup_A29'] = "Centro Médico";
 $lang['login_patient_sigup_A30'] = "Hospital";
 $lang['login_patient_sigup_A31'] = "Nome do provedor de saude";
 $lang['login_sigup_A3'] = "Encontre um médico e marque uma consulta
-online gratuitamente!    ";
+online gratuitamente!";
 $lang['login_patient_sigup_A9'] = "Access Bookmydoc network of more than 5 million patients.";
 $lang['login_patient_sigup_A10'] = "Let patients schedule appointments with you instantly, 24-7, from Bookmydoc and from your practice website.";
 $lang['login_patient_sigup_A11'] = "Sign up for a book my doc account to book an appointment right now!";
