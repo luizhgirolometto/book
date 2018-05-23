@@ -12,7 +12,7 @@
 <!-- Select2 -->
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/select2.min.css">
 <!-- Theme style -->
-	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/AdminLTE.min.css">		
+<!--	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/AdminLTE.min.css">		-->
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/common.css"> 
 <!--  calendar 
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/appointment/calendar.css">   

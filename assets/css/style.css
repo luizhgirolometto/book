@@ -313,8 +313,17 @@ color: #616161;
 
 /*footer*/
 footer {
-background: #af212a;
+    background: #af212a;
 }
+
+.menu-footer ul {
+    display:inline-table;
+}
+
+.menu-footer li {
+    display:inline;
+}
+
 .menu-footer ul li {
     color: #fff;
     list-style: none;
@@ -342,6 +351,7 @@ color: #f0f0f0;
 
 .menu-footer {
     margin: 50px 0 40px 0;
+    text-align: center;
 }
 
 .footer-text h3 {
@@ -718,8 +728,9 @@ color: #f0f0f0;
 .table-custom td span i {
     color: #af212a
 }
+
 .table>tbody>tr>td, .table>tfoot>tr>td, .table>thead>tr>td {
-    padding: 20px 12px;
+    padding: 2px 2px;
 }
 
 .inner-about img {

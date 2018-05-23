@@ -11,28 +11,25 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-9">
+<!--            <div class="col-lg-2"></div>-->
+            <div class="col-lg-12">
                 <div class="menu-footer">
                     <ul>
-                        <div class="col-lg-3">
-                            <li class="active"><a href="<?php echo base_url(); ?>"><?php if($this->lang->line('home_header_home')){ ?><?php echo $this->lang->line('home_header_home'); }else{ ?>Home<?php } ?></a>  </li>
-                        </div>
-                        <div class="col-lg-3">
-                            <li> <a href = "<?php echo base_url(); ?>General/aboutus"><?php if($this->lang->line('home_header_aboutus')){ ?><?php echo $this->lang->line('home_header_aboutus'); }else{ ?>About Us<?php } ?></a> </li>
-						</div>
-                       <div class="col-lg-3">
-                            <li><a href = "<?php echo base_url(); ?>General/contact"><?php if($this->lang->line('home_header_contact')){ ?><?php echo $this->lang->line('home_header_contact'); }else{ ?>Contact <?php } ?> </a></li>
-			           </div>  
-                        <!--<li><a href="javascript:void(0);">Blog </a></li> -->
-                        
+                        <li class="active"><a href="<?php echo base_url(); ?>"><?php if($this->lang->line('home_header_home')){ ?><?php echo $this->lang->line('home_header_home'); }else{ ?>Home<?php } ?></a>  </li>
+                        <li> <a href = "<?php echo base_url(); ?>General/aboutus"><?php if($this->lang->line('home_header_aboutus')){ ?><?php echo $this->lang->line('home_header_aboutus'); }else{ ?>About Us<?php } ?></a> </li>
+						 <li><a href = "<?php echo base_url(); ?>General/terms"><?php if($this->lang->line('home_header_terms')){ ?><?php echo $this->lang->line('home_header_terms'); }else{ ?>Terms <?php } ?></a></li>
+<!--                        <li><a href = "<?php echo base_url(); ?>General/careers"><?php if($this->lang->line('home_header_careers')){ ?><?php echo $this->lang->line('home_header_careers'); }else{ ?>Careers <?php } ?></a></li>-->
+                        <li><a href = "<?php echo base_url(); ?>General/contact"><?php if($this->lang->line('home_header_contact')){ ?><?php echo $this->lang->line('home_header_contact'); }else{ ?>Contact <?php } ?> </a></li>
+<!--
+						<li><a href="javascript:void(0);"><?php if($this->lang->line('home_header_faq')){ ?><?php echo $this->lang->line('home_header_faq'); }else{ ?>FAQ <?php } ?></a></li>
+                        <li><a href="javascript:void(0);"><?php if($this->lang->line('home_header_blog')){ ?><?php echo $this->lang->line('home_header_blog'); }else{ ?>Blog <?php } ?> </a></li>
+                        <li><a href="javascript:void(0);"><?php if($this->lang->line('home_header_doctorblog')){ ?><?php echo $this->lang->line('home_header_doctorblog'); }else{ ?>Doctor Blog <?php } ?> </a></li>
+-->
                     </ul>
                     <div class="clearfix"></div>
                 </div>
             </div>
-            
-            
-            <div class="col-lg-2"></div>
+<!--            <div class="col-lg-2"></div>-->
         </div>
         <div class="row">
             <div class="col-lg-3 col-xs-6">

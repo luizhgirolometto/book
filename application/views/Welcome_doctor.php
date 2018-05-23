@@ -97,11 +97,11 @@
 														<?php }	?>
 														<div class="col-lg-8">
 															<form  method="post" action="">
-																<div class="table-responsive">
-																	<table class="table table-custom table-calender checkcalworktable">
+<!--																<div class="table-responsive">-->
+																	<table class="table table-bordered">
 																		<thead>
 																			<tr>
-																				<th><input type="checkbox" class="checkall" value="" />&nbsp Marcar Todos</th>
+<!--																				<th><input type="checkbox" class="checkall" value="" />&nbsp Marcar Todos</th>-->
 
 																				<th><?php if($this->lang->line('doctor_tab_B22')){ ?><?php echo $this->lang->line('doctor_tab_B22'); }else{ ?>Day<?php } ?></th>
 																				<th><?php if($this->lang->line('doctor_tab_B23')){ ?><?php echo $this->lang->line('doctor_tab_B23'); }else{ ?>Start<?php } ?></th>
@@ -113,7 +113,7 @@
 																			<?php $working_time = (!empty($doctor_schedule['working_time'])) ? json_decode($doctor_schedule['working_time'],true) : array();?>				 	
 																			<?php foreach ($Days as $key => $value) { ?>
 																			<tr>
-																				<td ><input type="checkbox" /></td>
+<!--																				<td ><input type="checkbox" /></td>-->
 
 																				<td><ul><li><span><?php echo $value;?></span></li></ul></td>
 
@@ -131,7 +131,7 @@
 																		<?php } ?>
 																		</tbody>
 																	</table>
-																</div>
+<!--																</div>-->
 																<button value="doctorsubmitwork" type="submit" name="doctorsubmitwork" id="checkcalworkbutton" class="btn btn-default checkcalworkbutton"><span><i class="fa fa-refresh"></i> </span><?php if($this->lang->line('doctor_tab_D')){ ?><?php echo $this->lang->line('doctor_tab_D'); }else{ ?>Update<?php } ?></button>
 															</form>
 														</div>
