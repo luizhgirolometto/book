@@ -9,13 +9,13 @@
 <!DOCTYPE html>
 	<html>
 		<?php $this->load->view('Templates/header-script');?>
-		<body class="hold-transition <?php echo $this->config->item("theme_color"); ?> sidebar-mini">
-			<div class="wrapper">
+		<body id="page-top">
+<!--			<div class="wrapper">-->
 				<?php 	$this->load->view('Templates/common_header-menu');
 						$this->load->view('Searchbar');
 						$this->load->view($page);
 						$this->load->view('Templates/footer');   ?>    
-			</div>
+<!--			</div>-->
 				<?php $this->load->view('Templates/footer-script'); ?>
 		</body>
 	</html>

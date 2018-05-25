@@ -21,8 +21,20 @@
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/jquery.timepicker.css">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/datepicker.css">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/freelancer.min.css">
+
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/responsive.css">
-<!--fullcalendar		 -->
-	<link href='https://use.fontawesome.com/releases/v5.0.6/css/all.css' rel='stylesheet'>
+<!--fullcalendar		 -->	
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/full/fullcalendar.min.css">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/full/fullcalendar.print.min.css" media='print'>
+
+<!--Fonts-->
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://use.fontawesome.com/releases/v5.0.6/css/all.css' rel='stylesheet'>
+
+
+ <!-- Plugin CSS -->
+    <link href="<?php echo base_url(); ?>assets/css/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
