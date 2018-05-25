@@ -12,52 +12,34 @@
 	$extension = ".php"; 
 	require 'admin/includes/'.$textFile.$extension;       
 ?>
-<nav class="navbar navbar-default nav-main">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-xs-4 col-sm-12 logo-col">
-                <div class="logo animated fadeInLeft">
-                    <a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>admin/<?php echo $settings->logo;?>"  class="img-responsive col-lg-12 col-xs-12 col-sm-3" alt=""/></a>
-                </div>
-            </div>
-            <div class="col-lg-9 col-xs-8 col-sm-12 header-sgnin">
-                <div class="signin">
-                    <ul>
-					    <?php if ($this->session->userdata('frontend_logged_in')){								
-							?>
-							<li><a href = "<?php echo base_url(); ?>Welcome"><img src="<?php echo base_url(); ?>assets/images/patient-login/m-1.png" />Olá,<?php if(!empty($match_username)){ echo $match_username; }else{ ?> Usuário <?php } ?> </a></li>
-							<li><a href = "<?php echo base_url(); ?>Logout"><img src="<?php echo base_url(); ?>assets/images/home/2.png" />Sair </a></li>
-						<?php } else{ ?>
-							<li ><a href = "<?php echo base_url(); ?>Login/presignup"><img src="<?php echo base_url(); ?>assets/images/home/1.png" />Cadastrar-se</a></li>
-							<li onclick="mysigninFunction()" data-toggle="modal" class="log-index" data-target="#myModal"><img src="<?php echo base_url(); ?>assets/images/home/2.png" />Entrar</li>
-						<?php } ?>
-		
-					</ul>
-                </div>
-                <div class="clearfix hidden-xs"></div>
-                <div class="navbar-header navbar-header-resp">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav nav-head animated fadeInDown">
-                        <li class="active m-1"><a href="<?php echo base_url(); ?>"><?php if($this->lang->line('home_header_home')){ ?><?php echo $this->lang->line('home_header_home'); }else{ ?>Home<?php } ?><span class="sr-only">(current)</span></a></li>
-                        <li><a href = "<?php echo base_url(); ?>General/aboutus">Sobre nós</a></li>
-						
-                        <li><a href = "<?php echo base_url(); ?>General/contact">Contato</a></li>
-					
-                       <!-- <li><a href="javascript:void(0);">Blog </a></li> -->
-    
-                    </ul>
-                </div>
-            </div>
+
+
+
+  <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Home</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Sobre nós</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contato</a>
+            </li>
+          </ul>
         </div>
-    </div>
-</nav>
+      </div>
+    </nav>
+
+
+
 <div class="container">
     <!-- Modal -->
     <div class="modal fade bac-modal" id="myModal" role="dialog">
