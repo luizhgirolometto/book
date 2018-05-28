@@ -9,7 +9,7 @@ $extension = ".php";
 require 'admin/includes/'.$textFile.$extension;	
 ?>
 <!--banner-section-->
-<div class="container-fluid">
+<!-- <div class="container-fluid">
     <div class="banner">
         <div class="container">
             <div class="col-lg-12">
@@ -22,11 +22,33 @@ require 'admin/includes/'.$textFile.$extension;
                         <img class="hvr-grow" src="<?php echo base_url(); ?>assets/images/home/scroll.png" alt=""/>
                         <h3 ><?php if($this->lang->line('home_common_A4')){ ?><?php echo $this->lang->line('home_common_A4'); }else{ ?>Scroll Down<?php } ?></h3>
                     </div> -->
+                <!-- </div> 
+            </div>
+        </div>
+    </div>
+</div> -->
+
+    <!-- Header -->
+<header class="masthead text-white">
+    <div class="container-fluid">
+        <div class="banner">
+            <div class="container">
+                <div class="col-lg-12">
+                    <div class="banner-text animated fadeInLeft">
+                   
+                        <h2 class="text-uppercase"><?php if($this->lang->line('home_common_A1')){ ?><?php echo $this->lang->line('home_common_A1'); }else{ ?>Family More Healthy<?php } ?></h2>
+
+                        <p><?php if($this->lang->line('home_common_A2')){ ?><?php echo $this->lang->line('home_common_A2'); }else{ ?>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<?php } ?></p>
+
+                        <a href=""><?php if($this->lang->line('home_common_A3')){ ?><?php echo $this->lang->line('home_common_A3'); }else{ ?>Read more<?php } ?><i class="fa fa-angle-double-right"></i> </a>
+                   
+                    </div> 
                 </div>
             </div>
         </div>
     </div>
-</div>
+</header>
+
 <!--banner-section-->
 <!--map-section-->
 <div class="container-fluid">
@@ -41,7 +63,6 @@ require 'admin/includes/'.$textFile.$extension;
             </div>
         </div>
     </div>
-
 </div>
 <!--map-section-->
 <div class="container-fluid features">

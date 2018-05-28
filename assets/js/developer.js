@@ -14,15 +14,11 @@
 			});		
 		});	
 		//Time Picker
-		// jQuery.datetimepicker.setLocale('pt-BR');
 		$(function () {
 			$(".timepicker").timepicker({
-			
-    		 timepicker: true,
-    	     format: 'd/m/Y H:i',
-      		// 'minTime': '00:00am',
-    		// 'maxTime': '24:00pm',
-	      showInputs: false
+				'minTime': '00:00am',
+				'maxTime': '24:00pm',
+				showInputs: false
 			});        
 		});	
 		//Date Picker

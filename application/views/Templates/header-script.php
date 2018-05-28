@@ -5,6 +5,8 @@
 	<link rel="icon" href="<?php echo base_url(); ?>admin/<?php echo $settings->favicon; ?>" type="image/jpg" sizes="16x16">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>	
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
+	
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/font-awesome.min.css">    
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/animate.css">
@@ -21,7 +23,7 @@
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/jquery.timepicker.css">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/datepicker.css">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/freelancer.min.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/head/freelancer.min.css">
 
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/responsive.css">
 <!--fullcalendar		 -->	

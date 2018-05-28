@@ -643,102 +643,14 @@ jQuery(document).ready(function ($) {
 
     };
 	/* Common Functions */
-   // $(document).ready(function () {
-    //    $("#my-calendar").zabuto_calendar({          
-	//		ajax: {
-	//		   url: base_url+"Welcome/checkappdate",
-	//		   modal: false		  
-	//		}
-	//	});		
-    //});
-
-    
-    
-/////////////////////////////////////////////////////////////////////////////////
-$(document).ready(function() {
-    $.ajax({
-        modal: false,
-        dataType: 'json',    
-        url: base_url+"Welcome/getdoctorevents",
-
-        success: function (doc) {
-           
-            $('#calendar').fullCalendar({
-                  themeSystem: 'bootstrap4',
-                  defaultView: 'agendaWeek',
-                  header: {
-                    left: 'prev,next today',
-                    center: 'title',
-                    right: 'month,agendaWeek,agendaDay,listMonth'
-                  },                  
-                  weekNumbers: true,
-                  navLinks: true, // can click day/week names to navigate views
-                  editable: true,
-                  eventLimit: true,
-                height: 650
-                //dayClick: function (date, view) {
-                    //alert('Clicked on: ' + date.format());
-                    //alert('Current view: ' + view.name);
-                    // change the day's background color just for fun
-                    //$/(this).css('background-color', 'red');
-                    //$("#AddNew").css("display", "block");
-                    //$("#stDate").val(date.format('DD/MM/YYYY'));
-                //}
-            });
-             //alert(doc);
-             $('#calendar').fullCalendar('renderEvent', doc, true);
-             $('#calendar').fullCalendar('addEventSource', doc);
-             $('#calendar').fullCalendar('refetchEvents');           
-        }
+    $(document).ready(function () {
+        $("#my-calendar").zabuto_calendar({          
+			ajax: {
+			   url: base_url+"Welcome/checkappdate",
+			   modal: false		  
+			}
+		});		
     });
-});
-/////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////
-// $(document).ready(function() {
-//     $.ajax({
-//         modal: false,
-//         dataType: 'json',    
-//         url: base_url+"Welcome/getdoctorevents",
-
-//         success: function (doc) {
-//             console.log(doc);
-//                initThemeChooser({
-
-//                     init: function(themeSystem) {
-//                         console.log(themeSystem);
-//                         $('#calendar').fullCalendar({
-//                           themeSystem: themeSystem,
-//                           defaultView: 'agendaWeek',
-//                           header: {
-//                             left: 'prev,next today',
-//                             center: 'title',
-//                             right: 'month,agendaWeek,agendaDay,listMonth'
-//                           },                  
-//                           weekNumbers: true,
-//                           navLinks: true, // can click day/week names to navigate views
-//                           editable: true,
-//                           eventLimit: true
-//                         // height: 650,
-//                         // dayClick: function (date, view) {
-//                         //     alert('Clicked on: ' + date.format());
-//                         //     alert('Current view: ' + view.name);
-//                         //     // change the day's background color just for fun
-//                         //     $(this).css('background-color', 'red');
-//                         //     $("#AddNew").css("display", "block");
-//                         //     $("#stDate").val(date.format('DD/MM/YYYY'));
-//                         // }
-//                     });
-//                      //alert(doc);
-//                      $('#calendar').fullCalendar('renderEvent', doc, true);
-//                      $('#calendar').fullCalendar('addEventSource', doc);
-//                      $('#calendar').fullCalendar('refetchEvents'); 
-//                    }
-                       
-//                 });
-//         }
-//     });
-// });
-/////////////////////////////////////////////////////////////////////////////////
 	$(".main-lg-reset").hide();
     $(".frgt-pass").click(function() {
         $(".main-lg-new").hide();
