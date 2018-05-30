@@ -13,23 +13,32 @@
 		?>
 	<!--patient-login-->
 	<div class="container">
-		<div class="col-lg-12">
-			<?php if($end_date == '' & $trial_date >= $current_date  ){?>					
-				<div class="alert">
-					<button class="close" data-dismiss="alert" type="button">×</button>
-					<h4><span>Aviso:</span></h4>
-					<h5> Você está usando uma versão de avaliação gratuita de 15 dias. Depois que o período de avaliação expirar, seus serviços não serão mais apresentados no filtro de pesquisa. Selecione qualquer pacote para estender seu serviço no MarqueHora</h3>
-				</div>								                                   
-			<?php } elseif($end_date < $current_date) { ?>							
-				<div class="alert">
-					<button class="close" data-dismiss="alert" type="button">×</button>
-					<h3><?php if($lgdoctormod74){ echo $lgdoctormod74; }else { ?>Alert Message<?php } ?>:</h3>
-					<h4>  <?php if($lgdoctormod76){ echo $lgdoctormod76; }else { ?>Your Package period is expired . Kindly Select any package to list your details under Bookmydoc.<?php } ?>
-					</h4>
-				</div>								                                         
-			<?php } else{ ?>
-			<?php } ?>
-			
+		<div class="row">
+			<div class="col-lg-12">
+				<?php if($end_date == '' & $trial_date >= $current_date  ){?>					
+	<!-- 				<div class="alert">
+						<button class="close" data-dismiss="alert" type="button">×</button>
+						<h4><span>Aviso:</span></h4>
+						<h5> Você está usando uma versão de avaliação gratuita de 15 dias. Depois que o período de avaliação expirar, seus serviços não serão mais apresentados no filtro de pesquisa. Selecione qualquer pacote para estender seu serviço no MarqueHora</h3>
+					</div>	 -->							                                   
+					<div class="alert alert-dismissible alert-primary alert-msg">
+					  	
+					  <button type="button" class="close" data-dismiss="alert">&times;</button>
+					  <h4 class="alert-heading">Aviso:</h4>
+					  <p class="mb-0">Você está usando uma versão de avaliação gratuita de 15 dias. Depois que o período de avaliação expirar, seus serviços não serão mais apresentados no filtro de pesquisa. Selecione qualquer pacote para estender seu serviço no MarqueHora.</p>
+
+					</div>				
+				<?php } elseif($end_date < $current_date) { ?>							
+					<div class="alert">
+						<button class="close" data-dismiss="alert" type="button">×</button>
+						<h3><?php if($lgdoctormod74){ echo $lgdoctormod74; }else { ?>Alert Message<?php } ?>:</h3>
+						<h4>  <?php if($lgdoctormod76){ echo $lgdoctormod76; }else { ?>Your Package period is expired . Kindly Select any package to list your details under Bookmydoc.<?php } ?>
+						</h4>
+					</div>								                                         
+				<?php } else{ ?>
+				<?php } ?>
+				
+			</div>
 		</div>
 	</div>
 	<!-- options -->

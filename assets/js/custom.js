@@ -375,14 +375,10 @@
 			$(target_length).after(html);
 			var target_class = $(this).attr('target_length');
 			$(target_class).last().find('input[type=text]').val('');
-			// jQuery.datetimepicker.setLocale('pt-BR');
 			$(".timepicker").timepicker({
-				
-    		 timepicker: true,
-    	     format: 'd/m/Y H:i',
-      		// 'minTime': '00:00am',
-    		// 'maxTime': '24:00pm',
-	      showInputs: false
+				'minTime': '00:00am',
+				'maxTime': '24:00pm',
+			showInputs: false
 			});		
 		}
 	});

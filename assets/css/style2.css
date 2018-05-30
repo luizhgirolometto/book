@@ -29,21 +29,7 @@ body {
     margin: 0;
 }
 
-img-banner {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   width: 500px;
-   height: 500px;
-   margin-top: -250px; /* Half the height */
-   margin-left: -250px; /* Half the width */
-}
 
-alert-msg {
-    margin: 220px !important;
-    padding-top: 33px;
-    border-top:100px;
-}
 a:focus, a:hover {
     text-decoration: none;
 }
@@ -54,13 +40,48 @@ a {
 }
 .container-fluid {
     padding:0;
-    padding-top: 33px;
+    padding-top: 133px;
 }
 
 /*home page*/
 
+
+ /* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    /*background-color: #4CAF50;*/
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+} 
+
 .nav-main {
-    background-color: #f3f3f3;
+    background-color: #dfdfdf;
     border-color: transparent;
     position: relative;
     z-index: 1;
@@ -104,6 +125,11 @@ a {
     list-style: none;
     float: left;
     margin: 0 50px 0 0;
+   
+     font-weight: bold;
+     font-size: 15;
+     font-family: arial, sans-serif;    
+        
 }
 
 .signin ul li  img {
@@ -143,16 +169,15 @@ a {
 }
 .banner h2 {
     color: #af212a;
-    font-family: 'Montserrat';
-    font-weight: bold;
-    /*font-weight: 700;*/
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
     font-size: 36px;
     margin: 0 0 10px 0;
 }
 
 .banner p {
-    color: #565656;
-    font-family: 'Montserrat';
+color: #565656;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
     font-style: italic;
@@ -161,7 +186,7 @@ a {
     width: 33%;
 }
 .banner a {
-    color: #a01f62;
+    color: #af212a;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -324,8 +349,17 @@ color: #616161;
 
 /*footer*/
 footer {
-background: #af212a;
+    background: #af212a;
 }
+
+.menu-footer ul {
+    display:inline-table;
+}
+
+.menu-footer li {
+    display:inline;
+}
+
 .menu-footer ul li {
     color: #fff;
     list-style: none;
@@ -353,6 +387,7 @@ color: #f0f0f0;
 
 .menu-footer {
     margin: 50px 0 40px 0;
+    text-align: center;
 }
 
 .footer-text h3 {
@@ -488,18 +523,18 @@ color: #f0f0f0;
 }
 
 .tab-find {
-    background: #b12f7a;
+    background: ##cc3e51;
 }
 .nav-tab-find {
-    background: #891f5a;
-    border-color:#891f5a;
+    background: #af212a;
+    border-color:#af212a;
     margin: 0 -15px 40px -15px;
 }
 .nav-tab-find>li.active>a, .nav-tab-find>li.active>a:focus, .nav-tab-find>li.active>a:hover {
     color: #fff;
     cursor: default;
-    background-color: #b12f7a;
-    border: 1px solid #b12f7a;
+    background-color: ##cc3e51;
+    border: 1px solid ##cc3e51;
     border-bottom-color: transparent;
     font-style: normal;
     padding: 11px;
@@ -584,7 +619,7 @@ color: #f0f0f0;
 }
 
 .about-main h1 {
-    color: #a01f62;
+    color: #af212a;
     font-size: 27px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -617,7 +652,7 @@ color: #f0f0f0;
     margin: 30px 0 0 0;
 }
 .about-main h5 a {
-    color: #a01f62;
+    color: #af212a;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -729,8 +764,9 @@ color: #f0f0f0;
 .table-custom td span i {
     color: #af212a
 }
+
 .table>tbody>tr>td, .table>tfoot>tr>td, .table>thead>tr>td {
-    padding: 20px 12px;
+    padding: 2px 2px;
 }
 
 .inner-about img {
@@ -752,7 +788,7 @@ color: #f0f0f0;
 }
 
 .contact-form-main {
-    background: #a01f62;
+    background: #af212a;
 }
 
 .getting-back {
@@ -877,7 +913,7 @@ color: #464646;
 
 
 .profile-head  h3 span {
-    color: #a01f62;
+    color: #af212a;
     font-size: 20px;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
@@ -918,20 +954,24 @@ color: #464646;
     border-radius: 50%;
     height: 78px;
     width: 78px;
-    border: 2px solid #a01f62;
+    border: 2px solid #af212a;
     margin: 0 30px 0px 0;
     float: left;
 }
 .docimg_img{
-margin: 0px 29px 3px 195px;
+margin: 0px 0px 0px 0px;
 }
 .left-img-ph.another img {
    border-radius: 50%;
 height: 60px;
 width: 60px;
-border: 2px solid #a01f62;
+border: 2px solid #af212a;
 margin: 0 30px 0px 0;
 float: left;
+}
+.img-profile{
+ border: 1px solid;
+ border-color:#af212a;
 }
 
 .left-events h4 {
@@ -1020,7 +1060,7 @@ float: left;
 }
 
 .right-events-1 h4 {
-    color: #a01f62;
+    color: #af212a;
     font-size: 15px;
     font-weight: 700;
     font-family: 'Open Sans', sans-serif;
@@ -1052,12 +1092,12 @@ float: left;
 }
 
 .rated a h3 {
-    color: #a01f62;
+    color: #af212a;
 }
 
 .tab-cnt-search .nav-tabs li a {
 color: #636363;
-    font-size: 18px;
+    font-size: 13px;
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
 }
@@ -1231,7 +1271,7 @@ color: #636363;
 }
 
 .srch-patient-log {
-    background: #a01f62;
+    background: #af212a;
     margin: -20px 0;
 }
 option {
@@ -1431,7 +1471,7 @@ color: #af212a;
 }
 
 .pat-view-text h3 {
-    color: #a01f62;
+    color: #af212a;
     font-weight: 700;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
@@ -1515,7 +1555,7 @@ color: #af212a;
     left: 20px;
 }
 .quali-main h4 {
-    color: #a01f62;
+    color: #af212a;
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
@@ -1538,7 +1578,7 @@ color: #af212a;
 }
 
 .read-mre {
-    color: #a01f62;
+    color: #af212a;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
@@ -1589,7 +1629,7 @@ color: #af212a;
 }
 
 .hospital-left h3 {
-    color: #a01f62;
+    color: #af212a;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
@@ -1604,7 +1644,7 @@ color: #af212a;
 }
 
 .hospital-right h3 {
-     color: #a01f62;
+     color: #af212a;
      font-weight: 400;
      font-family: 'Open Sans', sans-serif;
      font-size: 18px;
@@ -1622,7 +1662,7 @@ color: #af212a;
 }
 
 .by-span {
-    color: #a01f62;
+    color: #af212a;
     font-weight: 400;
 }
 
@@ -1680,7 +1720,7 @@ text-align: center;
 }
 
 .appointment h4 {
-    color: #a01f62;
+    color: #af212a;
     font-weight: 700;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
@@ -1705,7 +1745,7 @@ color: #5c5c5e;
 }
 
 .patient-info h4{
-    color: #a01f62;
+    color: #af212a;
     font-weight: 700;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
@@ -1758,7 +1798,7 @@ color: #5c5c5e;
 }
 
 .ck-online h4 {
-    color: #a01f62;
+    color: #af212a;
     font-weight: 700;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
@@ -1809,7 +1849,7 @@ color: #5c5c5e;
 }
 
 .appoin-det h5 {
-    color: #a01f62;
+    color: #af212a;
     font-weight: 700;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
@@ -1876,7 +1916,7 @@ color: #5c5c5e;
 }
 
 .edit-scn h4 {
-color: #a01f62;
+color: #af212a;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -1931,7 +1971,7 @@ background: transparent;
 }
 
 .edit-scn ul li {
-    color: #a01f62;
+    color: #af212a;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 26px;
@@ -1991,7 +2031,7 @@ text-align: center;
     font-weight: 600;
 }
 .table-calender ul li {
-    color: #a01f62;
+    color: #af212a;
 }
 
 .table-calender h4 {
@@ -2040,7 +2080,7 @@ text-align: center;
 }
 
 .my-details {
-    background: #a01f62;
+    background: #af212a;
 }
 
 .my-details label{
@@ -2366,7 +2406,7 @@ div.zabuto_calendar div.legend span.badge {
 }
 
 .login-top h3 {
-    color: #a01f62;
+    color: #af212a;
     font-size: 24px;
     font-family: 'Open Sans', sans-serif;
     margin: 20px 0 30px 0;
@@ -2381,7 +2421,7 @@ div.zabuto_calendar div.legend span.badge {
 }
 
 .frgt-pass {
-    color: #b02c78;
+    color: #af212a;
 }
 
 .log-in-a {
@@ -2389,7 +2429,7 @@ div.zabuto_calendar div.legend span.badge {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: #fff;
-    background: #b02c78;
+    background: #af212a;
     padding: 7px 15px;
 }
 
@@ -2412,7 +2452,7 @@ div.zabuto_calendar div.legend span.badge {
 .login-modal {
     box-shadow: none;
     border-radius: 0px;
-    border-color: #a01f62;
+    border-color: #af212a;
     width: 125%;
     padding: 35px;
 }
@@ -2461,7 +2501,7 @@ text-align: right;
     font-size: 24px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    color: #a01f62;
+    color: #af212a;
     margin: 30px 0 0 0;
 }
 .join h4 {
@@ -2469,7 +2509,7 @@ text-align: right;
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    color: #a01f62;
+    color: #af212a;
     font-style: italic;
     margin: 15px 0 40px 0;
     line-height: 20px;
@@ -2487,7 +2527,7 @@ text-align: right;
     font-weight: 600;
     padding: 6px 15px;
     color: #fff;
-    background: #b02c78;
+    background: #af212a;
 }
 
 .join h5 a:hover {
@@ -2498,14 +2538,14 @@ text-align: right;
     font-size: 24px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    color: #a01f62;
+    color: #af212a;
     margin: 25px 0 0 0;
 }
 .join-1 h4 {
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    color: #a01f62;
+    color: #af212a;
     font-style: italic;
     margin: 15px 0 40px 0;
     line-height: 20px;
@@ -2517,7 +2557,7 @@ text-align: right;
     font-weight: 600;
     padding: 6px 15px;
     color: #fff;
-    background: #b02c78;
+    background: #af212a;
 }
 
 .join-1 h5 a:hover {
@@ -2557,7 +2597,7 @@ text-align: right;
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    color: #a01f62;
+    color: #af212a;
     margin: 30px 0 20px 0;
 }
 
@@ -2592,7 +2632,7 @@ text-align: right;
 .join-now-doc-1 .form-group label {
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
-    color: #a01f62;
+    color: #af212a;
     font-style: italic;
 }
 
@@ -2617,8 +2657,8 @@ text-align: right;
 }
 
 .btn-continue {
-    background: #a01f62;
-    border: 1px solid #a01f62;
+    background: #af212a;
+    border: 1px solid #af212a;
     border-radius: 0px;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
@@ -3252,7 +3292,7 @@ margin: 30px 0 0 0;
 }
 
 .prf-rght-dash i {
-    color: #a01f62;
+    color: #af212a;
     font-size: 18px;
 }
 
@@ -3326,7 +3366,7 @@ margin: 30px 0 0 0;
 }
 
 .ap-date span {
-    color: #a01f62;
+    color: #af212a;
     margin: 0 10px 0 0;
 }
 
@@ -3346,14 +3386,14 @@ margin: 30px 0 0 0;
     font-size: 15px;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
-    color: #a01f62;
+    color: #af212a;
 }
 
 .lst-no-prf h2 {
     font-size: 15px;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
-    color: #a01f62;
+    color: #af212a;
     padding: 10px 0 0 0;
 
 }
@@ -3366,7 +3406,7 @@ margin: 30px 0 0 0;
     font-size: 15px;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
-    color: #a01f62;
+    color: #af212a;
     margin: 0;
 
 
@@ -3453,7 +3493,7 @@ margin: 30px 0 0 0;
     font-family: 'Open Sans', sans-serif;
 }
 .f-f4 h4 a {
-    color: #a01f62;
+    color: #af212a;
     font-weight: bold;
 }
 .f-f4 {
@@ -3536,10 +3576,59 @@ height: 150px;
     padding-right: 0px;
 }
 
+.teste {
+background:#333;
+width:450px;
+margin: auto;
+padding:10px;
+text-align:center;
+ 
+-moz-border-radius:7px;
+-webkit-border-radius:7px;
+ border-radius:7px;
+}
+
 /* end css nikhila */
 .inputimage{
 
 display:block;
 float: right;
 margin: 100px 0px 0px 0px;
+}
+body {
+  padding : 10px ;
+  
+}
+
+#exTab1 .tab-content {
+  color : #af212a;;
+  background-color: #af212a;
+  padding : 5px 15px;
+  font-size: 25px;
+}
+
+#exTab2 h3 {
+  color : #af212a;;
+  background-color: #af212a;
+  padding : 5px 15px;
+}
+
+/* remove border radius for the tab */
+
+#exTab1 .nav-pills > li > a {
+  border-radius: 0;
+}
+
+/* change border radius for the tab , apply corners on top*/
+
+#exTab3 .nav-pills > li > a {
+  border-radius: 4px 4px 0 0 ;
+  font-size: 15px;
+}
+
+#exTab3 .tab-content {
+  color : #af212a;
+  background-color: white;
+  padding : 5px 15px;
+  font-size: 13px;
 }
