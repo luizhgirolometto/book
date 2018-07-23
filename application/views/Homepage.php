@@ -59,7 +59,7 @@ require 'admin/includes/'.$textFile.$extension;
         <div class="container">
             <div class="map-text">
                 <h3><?php if($this->lang->line('home_common_B1')){ ?><?php echo $this->lang->line('home_common_B1'); }else{ ?>HEALTHCARE AT YOUR DEMAND !<?php }?></h3>
-                <h4><?php if($this->lang->line('home_common_B2')){ ?><?php echo $this->lang->line('home_common_B2'); }else{ ?>Find a nearby doctor or dentist and book an appointment instantly. And it's free !<?php }?></span></h4>
+                <h4><?php if($this->lang->line('home_common_B2')){ ?><?php echo $this->lang->line('home_common_B2'); }else{ ?>Find a nearby doctor or dentist and book an appointment instantly. And it's free !<?php }?></h4>
             </div>
         </div>
     </div>

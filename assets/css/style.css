@@ -19,6 +19,13 @@
 
 }
 
+
+/* Calendario do medico */
+#calendar {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -39,11 +46,7 @@ img-banner {
    margin-left: -250px; /* Half the width */
 }
 
-alert-msg {
-    margin: 220px !important;
-    padding-top: 33px;
-    border-top:100px;
-}
+
 a:focus, a:hover {
     text-decoration: none;
 }
