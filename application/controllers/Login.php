@@ -27,9 +27,9 @@ class Login extends CI_Controller {
 			$this->form_validation->set_rules('email', 'email', 'trim|required|valid_email|callback_isEmailExistDoctor'); 
 			if ($this->form_validation->run() == TRUE){		
 				$this->Login_Model->Insert_patient($data);				  
-				$this->session->set_flashdata('message',array('message' => 'Successfully Enrolled.Please Signin.','class' => 'success'));						
+				$this->session->set_flashdata('message',array('message' => 'Registrado com sucesso. Por favor, faça o login.','class' => 'success'));						
 			}else{
-				$this->session->set_flashdata('You have Entered Wrong Information',array('message' => 'Error','class' => 'danger'));	
+				$this->session->set_flashdata('Você inseriu informações erradas',array('message' => 'Error','class' => 'danger'));	
 			}
 		}
 		$search_template['cities'] =$this->Home_Model->pull_cities();			
