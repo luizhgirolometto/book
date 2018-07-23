@@ -9,7 +9,7 @@
 	<div class="row">
 		<div class="col-lg-7">
 			<div class="join-now-doc">
-				<h3><?php if($this->lang->line('login_sigup_A4')){ ?><?php echo $this->lang->line('login_sigup_A4'); }else{ ?>JOIN NOW<?php } ?></h3>
+				<h3>Junte-se a nós</h3>
 			</div>
 			<div class="row">
 				<?php 	if($this->session->flashdata('message')) {
@@ -19,9 +19,14 @@
 					<?php echo $message['message']; ?>
 				</div>
 				<?php }	?>
+                
+                                     
+                
+                
+                
 				<div class="join-now-doc-1">
 					<form role="form"  action="" method="post"  data-parsley-validate="" class="validate" enctype="multipart/form-data" >
-						<div class="col-lg-6">
+						<div class="col-lg-12">
 							<div class="form-group">
 								<input type="hidden" name="status" id="status" value="1">
 								<label for="exampleInputPassword1"><?php if($this->lang->line('login_sigup_B4')){ ?><?php echo $this->lang->line('login_sigup_B4'); }else{ ?>First Name<?php } ?></label>
@@ -40,7 +45,7 @@
 								<input type="password" name="password" class="form-control" id="exampleInputPassword1" data-parsley-minlength="6" required="">
 							</div>
 						</div>
-						<div class="col-lg-6">
+						<div class="col-lg-12">
 							<div class="form-group">
 								<label for="exampleInputPassword1"><?php if($this->lang->line('login_sigup_B6')){ ?><?php echo $this->lang->line('login_sigup_B6'); }else{ ?>Sex<?php } ?></label>
 								<div class="radio">
@@ -53,11 +58,11 @@
 							<div class="clearfix"></div>                             
 							<div class="form-group">                              
 								<div class="checkbox">
-									<label><input type="checkbox" value="agreed" name="terms" required><?php if($this->lang->line('login_sigup_B10')){ ?><?php echo $this->lang->line('login_sigup_B10'); }else{ ?>I Agree to the Terms and Conditions<?php } ?></label>
+									<label><input type="hidden" value="agreed" name="terms" required><?php if($this->lang->line('login_sigup_B10')){ ?><?php echo $this->lang->line('login_sigup_B10'); }else{ ?>I Agree to the Terms and Conditions<?php } ?></label>
 								</div>
 							</div>
 							<div class="form-group">
-								<button type="submit" class="btn btn-default btn-continue"><?php if($this->lang->line('login_sigup_B11')){ ?><?php echo $this->lang->line('login_sigup_B11'); }else{ ?>Continue<?php } ?></button>
+								<button type="submit" class="btn btn-default btn-continue">Gravar meus dados</button>
 							</div>
 						</div>
 					</form>

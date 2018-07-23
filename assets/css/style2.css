@@ -2571,10 +2571,13 @@ text-align: right;
 .join-1 {
     padding: 0 30px;
 }
+/*
 
 .join-main {
-    margin: 60px 0;
+    margin: 30px 0;
+    padding: 10px;
 }
+*/
 
 .find-close {
     position: absolute;
