@@ -26,14 +26,27 @@
     margin: 0 auto;
   }
 
+
+
+
+
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
 
-body {
+.body-main {
     margin: 0;
+    padding-top: 114px!important;
+}
+
+.tales {
+  width: 100%;
+}
+.carousel-inner{
+  width:100%;
+  max-height: 550px !important;
 }
 
 img-banner {
@@ -46,6 +59,10 @@ img-banner {
    margin-left: -250px; /* Half the width */
 }
 
+.carousel-img{
+    height: 100% !important;
+    
+}
 
 a:focus, a:hover {
     text-decoration: none;
@@ -55,9 +72,9 @@ a {
     text-decoration: none;
     outline: none !important;
 }
-.container-fluid {
+.container-fluid-banner {
     padding:0;
-    padding-top: 33px;
+    padding-top: 8%;
 }
 
 .std-font {
@@ -129,7 +146,7 @@ a {
     padding: 15px 0 0 0;
 }
 
-.banner {
+.banner2 {
     background-image: url(../images/home/1.jpg);
     height: 902px;
     background-repeat: no-repeat;
@@ -2388,7 +2405,7 @@ div.zabuto_calendar div.legend span.badge {
 }
 
 .frgt-pass {
-    color: #b02c78;
+    color: #af212a;
 }
 
 .log-in-a {
@@ -2396,7 +2413,7 @@ div.zabuto_calendar div.legend span.badge {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: #fff;
-    background: #b02c78;
+    background: #af212a;
     padding: 7px 15px;
 }
 
