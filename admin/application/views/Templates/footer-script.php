@@ -104,11 +104,8 @@ var checkin = $('.dpd1').datepicker({
 	  <script>
 	 $(function () {
       	$(".timepicker").timepicker({
-      		 lang: 'pt-BR',
-    		 timepicker: true,
-    	     format: 'd/m/Y H:i',
-      		// 'minTime': '00:00am',
-    		// 'maxTime': '24:00pm',
+      		'minTime': '00:00am',
+    		'maxTime': '24:00pm',
 	      showInputs: false
 	    });
         
