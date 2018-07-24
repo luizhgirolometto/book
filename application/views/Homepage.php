@@ -8,63 +8,28 @@ $textFile = $kk->languages;
 $extension = ".php"; 
 require 'admin/includes/'.$textFile.$extension;	
 ?>
-<!--banner-section-->
-<!-- <div class="container-fluid">
-    <div class="banner">
-        <div class="container">
-            <div class="col-lg-12">
-                <div class="banner-text animated fadeInLeft">
-                   
-                    <h2><?php if($this->lang->line('home_common_A1')){ ?><?php echo $this->lang->line('home_common_A1'); }else{ ?>Family More Healthy<?php } ?></h2>
-                    <p><?php if($this->lang->line('home_common_A2')){ ?><?php echo $this->lang->line('home_common_A2'); }else{ ?>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<?php } ?></p>
-                    <a href=""><?php if($this->lang->line('home_common_A3')){ ?><?php echo $this->lang->line('home_common_A3'); }else{ ?>Read more<?php } ?><i class="fa fa-angle-double-right"></i> </a>
-                   <!-- <div class="scroll">
-                        <img class="hvr-grow" src="<?php echo base_url(); ?>assets/images/home/scroll.png" alt=""/>
-                        <h3 ><?php if($this->lang->line('home_common_A4')){ ?><?php echo $this->lang->line('home_common_A4'); }else{ ?>Scroll Down<?php } ?></h3>
-                    </div> -->
-                <!-- </div> 
+
+
+<!--begin carousel-->
+<div class="container-fluid nopadding body-main">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="tales" src="<?php echo base_url(); ?>assets/images/home/21.jpg" alt="MarqueHora">
             </div>
+            <div class="carousel-item">
+                <img class="tales" src="<?php echo base_url(); ?>assets/images/home/1.jpg" alt="MarqueHora">
+            </div>    
+            <div class="carousel-item">
+                <img class="tales" src="<?php echo base_url(); ?>assets/images/home/11.jpg" alt="MarqueHora">
+            </div>                
         </div>
-    </div>
-</div> -->
+    </div>    
+</div>    
 
-    <!-- Header -->
-<header class="masthead text-white">
-    <div class="container-fluid">
-        <div class="banner">
-            <div class="container">
-                <div class="col-lg-12">
-                    <div class="banner-text animated fadeInLeft">
-                   
-                        <h2 class="text-uppercase std-font"><?php if($this->lang->line('home_common_A1')){ ?><?php echo $this->lang->line('home_common_A1'); }else{ ?>Family More Healthy<?php } ?></h2>
+<!--end carousel-->
 
-                        <p><?php if($this->lang->line('home_common_A2')){ ?><?php echo $this->lang->line('home_common_A2'); }else{ ?>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<?php } ?></p>
-
-                        <a href=""><?php if($this->lang->line('home_common_A3')){ ?><?php echo $this->lang->line('home_common_A3'); }else{ ?>Read more<?php } ?><i class="fa fa-angle-double-right"></i> </a>
-                   
-                    </div> 
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-
-<!--banner-section-->
-<!--map-section-->
-<div class="container-fluid">
-    <div class="map">
-        <div class="man">
-            <img src="<?php echo base_url(); ?>assets/images/home/man.png" class="img-responsive animated fadeInDown" alt=""/>
-        </div>
-        <div class="container">
-            <div class="map-text">
-                <h3><?php if($this->lang->line('home_common_B1')){ ?><?php echo $this->lang->line('home_common_B1'); }else{ ?>HEALTHCARE AT YOUR DEMAND !<?php }?></h3>
-                <h4><?php if($this->lang->line('home_common_B2')){ ?><?php echo $this->lang->line('home_common_B2'); }else{ ?>Find a nearby doctor or dentist and book an appointment instantly. And it's free !<?php }?></h4>
-            </div>
-        </div>
-    </div>
-</div>
-<!--map-section-->
+<!--begin features-->
 <div class="container-fluid features">
     <div class="container">
         <div class="row">
@@ -95,6 +60,25 @@ require 'admin/includes/'.$textFile.$extension;
         </div>
     </div>
 </div>
+<!--end features-->
+
+<!--map-section-->
+<!--
+<div class="container-fluid">
+    <div class="map">
+        <div class="container">
+            <div class="map-text">
+                <h3><?php if($this->lang->line('home_common_B1')){ ?><?php echo $this->lang->line('home_common_B1'); }else{ ?>HEALTHCARE AT YOUR DEMAND !<?php }?></h3>
+                <h4><?php if($this->lang->line('home_common_B2')){ ?><?php echo $this->lang->line('home_common_B2'); }else{ ?>Find a nearby doctor or dentist and book an appointment instantly. And it's free !<?php }?></h4>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+
+
+<!--map-section-->
+
 <!--get the app-->
 <div class="container-fluid">
     <div class="app-banner">
