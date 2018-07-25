@@ -308,7 +308,7 @@ class Welcome extends CI_Controller {
 				}
 				$data['vacation_time'] = json_encode($data['vacation_time']);	
 				$this->Welcome_Model->update_workingtime($id,$data);
-				$this->session->set_flashdata('messagevacation', array('messagevacation' => 'vacation time updated successfully', 'title' => 'Success !', 'class' => 'success'));
+				$this->session->set_flashdata('messagevacation', array('messagevacation' => 'Período de férias atualizado com sucesso', 'title' => 'Success !', 'class' => 'success'));
 			}elseif (isset($_POST['submitpatient1']) & !empty ($_POST['submitpatient1'])){
 				$data = $_POST;	
 				$id=$this->session->userdata['frontend_logged_in']['id'];
