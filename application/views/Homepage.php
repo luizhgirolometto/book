@@ -11,6 +11,7 @@ require 'admin/includes/'.$textFile.$extension;
 
 
 <!--begin carousel-->
+<!--
 <div class="container-fluid nopadding body-main">
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -18,13 +19,44 @@ require 'admin/includes/'.$textFile.$extension;
                 <img class="tales" src="<?php echo base_url(); ?>assets/images/home/21.jpg" alt="MarqueHora">
             </div>
             <div class="carousel-item">
-                <img class="tales" src="<?php echo base_url(); ?>assets/images/home/1.jpg" alt="MarqueHora">
+                <img class="tales" src="<?php echo base_url(); ?>assets/images/home/31.jpg" alt="MarqueHora">
             </div>    
             <div class="carousel-item">
                 <img class="tales" src="<?php echo base_url(); ?>assets/images/home/11.jpg" alt="MarqueHora">
             </div>                
         </div>
     </div>    
+</div>    
+-->
+
+
+<div class="container-fluid nopadding body-main">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="tales" src="<?php echo base_url(); ?>assets/images/home/21.jpg" alt="MarqueHora">
+            </div>
+            <div class="carousel-item">
+                <img class="tales" src="<?php echo base_url(); ?>assets/images/home/31.jpg" alt="MarqueHora">
+            </div>    
+            <div class="carousel-item">
+                <img class="tales" src="<?php echo base_url(); ?>assets/images/home/11.jpg" alt="MarqueHora">
+            </div>                
+        </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
 </div>    
 
 <!--end carousel-->

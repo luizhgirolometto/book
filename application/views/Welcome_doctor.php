@@ -52,7 +52,7 @@
 						<div class="row">
 							<div class="col-lg-3 pad-zero sel-cl-mn sel-dashboard">
 								<div class="sel-clinic-tab dashboard-link">
-									<h4>Dashboard Menu</h4>
+									<h4>Seu menu</h4>
 									<ul>									
 										<li data-tab="tab-manage-1" class="li-man">
 											<h6><span><img src="<?php echo base_url(); ?>assets/images/dashboard/1.png" /> </span> Sua agenda </h6>
@@ -68,27 +68,27 @@
 								</div>
 							</div>
 							<div class="col-lg-9">									
-								<!--Begin calendar-->
+<!--Begin calendar-->
 								<div class="manage-ad-inner-main tab-manage-1 ">
 									<div class="checkin-homesubhosp"> 
 										<div id='calendar'></div>
                                         
 									</div> 
-								</div>
-                                
-								<!-- End Calendar-->
-								<!-- Begin settings -->
+								</div>                                
+<!-- End Calendar-->
+<!-- Begin settings -->
 								<div class="manage-ad-inner-main tab-manage-2">
 									<div class="tab-cnt-search">
 										<div class="container">
 											<div class="row">
-												<div class="col-lg-8">
+												<div class="col-lg-12">
 													<ul class="nav nav-tabs  nav-tb dct-inner-tab  dct-inner-tab-1">
-														<li class="active"><a data-toggle="tab" href="#homess"><span><img src="<?php echo base_url(); ?>assets/images/patient-login/nw-c.png" /> </span><?php if($this->lang->line('doctor_tab_B2')){ ?><?php echo $this->lang->line('doctor_tab_B2'); }else{ ?>Work Plan<?php } ?></a></li>
+														<li class="active"><a data-toggle="tab" href="#homess"><?php if($this->lang->line('doctor_tab_B2')){ ?><?php echo $this->lang->line('doctor_tab_B2'); }else{ ?>Work Plan<?php } ?></a></li>
 
 
-														<li><a data-toggle="tab" href="#menuss1"><span><img src="<?php echo base_url(); ?>assets/images/patient-login/break.png" /> </span><?php if($this->lang->line('doctor_tab_B3')){ ?><?php echo $this->lang->line('doctor_tab_B3'); }else{ ?>Breaks<?php } ?></a></li>
-														<li><a data-toggle="tab" href="#menuss2"><span><img src="<?php echo base_url(); ?>assets/images/patient-login/vacation.png" /> </span><?php if($this->lang->line('doctor_tab_B4')){ ?><?php echo $this->lang->line('doctor_tab_B4'); }else{ ?>Vacations<?php } ?></a></li>
+														<li><a data-toggle="tab" href="#menuss1"><?php if($this->lang->line('doctor_tab_B3')){ ?><?php echo $this->lang->line('doctor_tab_B3'); }else{ ?>Breaks<?php } ?></a></li>
+                                                        
+														<li><a data-toggle="tab" href="#menuss2"><span></span><?php if($this->lang->line('doctor_tab_B4')){ ?><?php echo $this->lang->line('doctor_tab_B4'); }else{ ?>Vacations<?php } ?></a></li>
 													</ul>
 												</div>
 											</div>
@@ -104,11 +104,11 @@
 															<?php echo $messagework['messagework']; ?>
 														</div>
 														<?php }	?>
-														<div class="col-lg-8">
+														<div class="col-lg-12">
 															<form  method="post" action="">
-<!--																<div class="table-responsive">-->
-																	<table class="table table-bordered">
-																		<thead>
+																<div class="table-responsive">
+																	<table class="table">
+																		<thead class="thead-dark">
 																			<tr>
 <!--																				<th><input type="checkbox" class="checkall" value="" />&nbsp Marcar Todos</th>-->
 
@@ -127,9 +127,9 @@
 																				<td><ul><li><span><?php echo $value;?></span></li></ul></td>
 
 																				<div class="timecal1">
-																				<td><h4><input  style="width: 70px;" type="text" class="timepicker pickwkt" onkeypress="return false;"  name="work[<?php echo $days[$key];?>][start]" value="<?php echo (!empty($working_time)) ? isset($working_time[ $days[$key]]['start']) ? $working_time[ $days[$key]]['start'] :'' : '';?>" readonly></h4></td>
+																				<td><h4><input  style="width: 80px; font-size: 15px;" type="text" class="timepicker pickwkt" onkeypress="return false;"  name="work[<?php echo $days[$key];?>][start]" value="<?php echo (!empty($working_time)) ? isset($working_time[ $days[$key]]['start']) ? $working_time[ $days[$key]]['start'] :'' : '';?>" readonly></h4></td>
 
-																				<td><h4><input   style="width: 70px;" type="text"   class="timepicker pickwkt"  onkeypress="return false;"  name="work[<?php echo $days[$key];?>][end]" value="<?php echo (!empty($working_time)) ? isset($working_time[ $days[$key]]['end']) ? $working_time[ $days[$key]]['end'] :'' : '';?>" readonly></h4></td>
+																				<td><h4><input   style="width: 80px; font-size: 15px;" type="text"   class="timepicker pickwkt"  onkeypress="return false;"  name="work[<?php echo $days[$key];?>][end]" value="<?php echo (!empty($working_time)) ? isset($working_time[ $days[$key]]['end']) ? $working_time[ $days[$key]]['end'] :'' : '';?>" readonly></h4></td>
 
 																				
 																				</div>
@@ -140,13 +140,17 @@
 																		<?php } ?>
 																		</tbody>
 																	</table>
-<!--																</div>-->
-																<button value="doctorsubmitwork" type="submit" name="doctorsubmitwork" id="checkcalworkbutton" class="btn btn-default checkcalworkbutton"><span><i class="fa fa-refresh"></i> </span><?php if($this->lang->line('doctor_tab_D')){ ?><?php echo $this->lang->line('doctor_tab_D'); }else{ ?>Update<?php } ?></button>
+																</div>
+                                                                <section class="row nopadding">
+                                                                    <div class="mx-auto">
+																        <button value="doctorsubmitwork" type="submit" name="doctorsubmitwork" id="checkcalworkbutton" class="btn btn-primary btn-lg checkcalworkbutton">Gravar Horários</button>
+                                                                    </div>
+                                                                </section>        
+                                                                
+                                                                
 															</form>
 														</div>
-														<div class="col-lg-12">
-															<h5 class="pad-center pad-center-1"><img src="<?php echo base_url(); ?>assets/images/patient-login/tick.png" > </h5>
-														</div>
+														
 													</div>
 													<div id="menuss1" class="tab-pane fade">
 													<?php   if($this->session->flashdata('messagebreak')) {
