@@ -652,74 +652,117 @@ jQuery(document).ready(function ($) {
 		});		
     });
     
-/* calendario do medico */
+/* fullcalendar controlers     */
+//$(document).ready(function() {
+//
+//    $('#calendar').fullCalendar({
+//      defaultDate: '2018-03-12',
+//      editable: false,
+//      eventLimit: true, // allow "more" link when too many events
+//      events: [
+//        {
+//          title: 'All Day Event',
+//          start: '2018-03-01'
+//        },
+//        {
+//          title: 'Long Event',
+//          start: '2018-03-07',
+//          end: '2018-03-10'
+//        },
+//        {
+//          id: 999,
+//          title: 'Repeating Event',
+//          start: '2018-03-09T16:00:00'
+//        },
+//        {
+//          id: 999,
+//          title: 'Repeating Event',
+//          start: '2018-03-16T16:00:00'
+//        },
+//        {
+//          title: 'Conference',
+//          start: '2018-03-11',
+//          end: '2018-03-13'
+//        },
+//        {
+//          title: 'Meeting',
+//          start: '2018-03-12T10:30:00',
+//          end: '2018-03-12T12:30:00'
+//        },
+//        {
+//          title: 'Lunch',
+//          start: '2018-03-12T12:00:00'
+//        },
+//        {
+//          title: 'Meeting',
+//          start: '2018-03-12T14:30:00'
+//        },
+//        {
+//          title: 'Happy Hour',
+//          start: '2018-03-12T17:30:00'
+//        },
+//        {
+//          title: 'Dinner',
+//          start: '2018-03-12T20:00:00'
+//        },
+//        {
+//          title: 'Birthday Party',
+//          start: '2018-03-13T07:00:00'
+//        },
+//        {
+//          title: 'Click for Google',
+//          url: 'http://google.com/',
+//          start: '2018-03-28'
+//        }
+//      ]
+//    });
+//
+//  });   
 $(document).ready(function() {
+    $.ajax({
+        modal: false,
+        dataType: 'json',    
+        url: base_url+"Welcome/getdoctorevents",
 
-    $('#calendar').fullCalendar({
-      defaultDate: '2018-03-12',
-      editable: false,
-      eventLimit: true, // allow "more" link when too many events
-      events: [
-        {
-          title: 'All Day Event',
-          start: '2018-03-01'
-        },
-        {
-          title: 'Long Event',
-          start: '2018-03-07',
-          end: '2018-03-10'
-        },
-        {
-          id: 999,
-          title: 'Repeating Event',
-          start: '2018-03-09T16:00:00'
-        },
-        {
-          id: 999,
-          title: 'Repeating Event',
-          start: '2018-03-16T16:00:00'
-        },
-        {
-          title: 'Conference',
-          start: '2018-03-11',
-          end: '2018-03-13'
-        },
-        {
-          title: 'Meeting',
-          start: '2018-03-12T10:30:00',
-          end: '2018-03-12T12:30:00'
-        },
-        {
-          title: 'Lunch',
-          start: '2018-03-12T12:00:00'
-        },
-        {
-          title: 'Meeting',
-          start: '2018-03-12T14:30:00'
-        },
-        {
-          title: 'Happy Hour',
-          start: '2018-03-12T17:30:00'
-        },
-        {
-          title: 'Dinner',
-          start: '2018-03-12T20:00:00'
-        },
-        {
-          title: 'Birthday Party',
-          start: '2018-03-13T07:00:00'
-        },
-        {
-          title: 'Click for Google',
-          url: 'http://google.com/',
-          start: '2018-03-28'
+        success: function (doc) {
+           
+            $('#calendar').fullCalendar({
+                  defaultView: 'agendaWeek',
+                  header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'month,agendaWeek,agendaDay,listMonth'
+                  },                  
+                  weekNumbers: true,
+                  navLinks: true, // can click day/week names to navigate views
+                  editable: true,
+                  eventLimit: true
+                
+                //dayClick: function (date, view) {
+                    //alert('Clicked on: ' + date.format());
+                    //alert('Current view: ' + view.name);
+                    // change the day's background color just for fun
+                    //$/(this).css('background-color', 'red');
+                    //$("#AddNew").css("display", "block");
+                    //$("#stDate").val(date.format('DD/MM/YYYY'));
+                //}
+            });
+             //alert(doc);
+             $('#calendar').fullCalendar('renderEvent', doc, true);
+             $('#calendar').fullCalendar('addEventSource', doc);
+             $('#calendar').fullCalendar('refetchEvents');           
         }
-      ]
     });
-
-  });   
+})    
+//End fullcalendar
     
-        
+//carousel controlers    
+$('.carousel').carousel({
+      interval: 2000
+    });
+    
+//End carousel     
+    
 	$(".main-lg-reset").hide();
     $(".frgt-pass").click(function() {
         $(".main-lg-new").hide();

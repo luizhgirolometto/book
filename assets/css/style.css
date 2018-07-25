@@ -38,12 +38,13 @@ html {
 
 .body-main {
     margin: 0;
-    padding-top: 114px!important;
+    padding-top: 100px!important;
 }
 
 .tales {
   width: 100%;
 }
+
 .carousel-inner{
   width:100%;
   max-height: 550px !important;
@@ -753,9 +754,29 @@ color: #f0f0f0;
 .table-custom td span i {
     color: #af212a
 }
+/*
 .table>tbody>tr>td, .table>tfoot>tr>td, .table>thead>tr>td {
     padding: 20px 12px;
 }
+*/
+/*
+.table th, .table td {
+   padding: 0 !important;  
+}
+*/
+
+
+.btn-primary {
+    color: #fff;
+    background-color: #af212a;
+    border-color: #FF303D; /*set the color you want here*/
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff !important;
+    background-color: #FF7D85 !important;
+    border-color: #FF303D !important; /*set the color you want here*/
+}
+
 
 .inner-about img {
     cursor: pointer;
@@ -1080,8 +1101,8 @@ float: left;
 }
 
 .tab-cnt-search .nav-tabs li a {
-color: #636363;
-    font-size: 18px;
+    color: #636363;
+    font-size: 19px;
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
 }
@@ -2040,8 +2061,9 @@ text-align: center;
 }
 
 .dct-inner-tab-1 {
-    border-bottom: none;
-    padding: 0 0 0 50px;
+    border-bottom: 4px solid #5c595a;
+    text-align: center;
+/*    padding: 0 0 0 50px;*/
 }
 
 .dct-inner-tab-1 li {
