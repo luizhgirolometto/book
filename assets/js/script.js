@@ -28,6 +28,7 @@ jQuery(document).ready(function ($) {
     var  url = document.URL;
     var page = url.split('/').pop();
     $(".nav li a").each(function(){
+        console.log('Aqui');
 		if(page == 'index.php' || page == ''){
             $(".nav li a").each(function() {               
                 var anchorText = $(this).text();
@@ -717,7 +718,8 @@ jQuery(document).ready(function ($) {
 //      ]
 //    });
 //
-//  });   
+//  }); 
+    
 $(document).ready(function() {
     $.ajax({
         modal: false,

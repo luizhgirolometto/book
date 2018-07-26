@@ -26,6 +26,11 @@
     margin: 0 auto;
   }
 
+.feature-img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
 
 
 
@@ -513,21 +518,23 @@ color: #f0f0f0;
 }
 
 .tab-find {
-    background: #b12f7a;
+    background: #FF7D85;
 }
 .nav-tab-find {
-    background: #891f5a;
-    border-color:#891f5a;
+/*
+    background: #AF212A;
+    border-color:#AF212A;
+*/
     margin: 0 -15px 40px -15px;
 }
 .nav-tab-find>li.active>a, .nav-tab-find>li.active>a:focus, .nav-tab-find>li.active>a:hover {
     color: #fff;
-    cursor: default;
-    background-color: #b12f7a;
-    border: 1px solid #b12f7a;
+    cursor: pointer;
+    background-color: ##FF303D;
+/*    border: 1px solid #b12f7a;*/
     border-bottom-color: transparent;
     font-style: normal;
-    padding: 11px;
+    padding: 10px;
 }
 .find {
     position: absolute;
@@ -576,9 +583,11 @@ color: #f0f0f0;
 }
 .form-control {
     border-radius: 0px;
+/*
     background: transparent;
     border-color: #fff;
     color: #fff;
+*/
     font-size: 13px;
 }
 
@@ -2007,9 +2016,11 @@ text-align: center;
     width: 33.33% !important;
 }
 
+/*
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
     background-color: transparent;
 }
+*/
 
 .table-calender th {
     background: #6d6f73;
