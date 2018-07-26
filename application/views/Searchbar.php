@@ -14,27 +14,31 @@
             </div>
             <div class="col-lg-12 tab-find ">
                 <ul class="nav nav-tabs nav-tab-find">
-                    <li class="active"><a data-toggle="tab" href="#home"><span><img src="<?php echo base_url(); ?>assets/images/home/form-1.png" /> </span><?php if($this->lang->line('search_tab_A1')){ ?><?php echo $this->lang->line('search_tab_A1'); }else{ ?>Doctor<?php } ?></a></li>
+                    
+                    <li class="active"><a data-toggle="tab" data-target="#home"><?php if($this->lang->line('search_tab_A1')){ ?><?php echo $this->lang->line('search_tab_A1'); }else{ ?>Doctor<?php } ?></a></li>
+<!--
                     <li><a data-toggle="tab" href="#menu1"><span><img src="<?php echo base_url(); ?>assets/images/home/form-2.png" /> </span><?php if($this->lang->line('search_tab_B1')){ ?><?php echo $this->lang->line('search_tab_B1'); }else{ ?> Clinic<?php } ?></a></li>
                     <li><a data-toggle="tab" href="#menu2"><span><img src="<?php echo base_url(); ?>assets/images/home/form-3.png" /> </span><?php if($this->lang->line('search_tab_C1')){ ?><?php echo $this->lang->line('search_tab_C1'); }else{ ?> Medical Center<?php } ?></a></li>
                     <li><a data-toggle="tab" href="#menu3"><span><img src="<?php echo base_url(); ?>assets/images/home/form-4.png" /> </span><?php if($this->lang->line('search_tab_D1')){ ?><?php echo $this->lang->line('search_tab_D1'); }else{ ?>Hospital<?php } ?></a></li>
+-->
                 </ul>
                 <div class="tab-content">
-                    <div id="home" class="tab-pane fade in active">
-                       <form role="form" action="<?php echo base_url();?>Doctor/Search" method="post"   class="animated fadeIn" enctype="multipart/form-data"> 
+                    <div id="home" class="tab-pane fade show active">
+                       <form role="form" action="<?php echo base_url();?>Doctor/Search" method="post" class="animated fadeIn" enctype="multipart/form-data"> 
                             <div class="form-group">							
                                 <div class="row">
                                     <div class="col-lg-2"></div>								
                                     <div class="col-lg-8">
 										<div id="locality_finder_Doc"> 
-											<input type="text" class="form-control autocompleteDoc" name="address" required id="exampleSelect1" placeholder="search city">
+											<input type="text" class="form-control autocompleteDoc" name="address" id="exampleSelect1" placeholder="Buscar a localização">
 											<input type="hidden" class="lat_perfect" id="lat_doc" name="latitude">
 											<input type="hidden" class="lon_perfect" id="lon_doc" name="longitude">
 										</div>	
                                     </div>
                                     <div class="col-lg-2"></div>
                                 </div>
-                            </div>												
+                            </div>											
+                           
                             <div class="form-group">
                                 <div class="row">
                                     <div class="col-lg-2"></div>
@@ -49,6 +53,7 @@
                                     <div class="col-lg-2"></div>
                                 </div>
                             </div>
+<!--
 							<div class="form-group">
                                 <div class="row">
                                     <div class="col-lg-2"></div>
@@ -60,6 +65,8 @@
                                     <div class="col-lg-2"></div>
                                 </div>
                             </div>
+-->
+<!--
                             <div class="form-group">
                                 <div class="row">
                                     <div class="col-lg-2"></div>
@@ -74,6 +81,8 @@
                                     <div class="col-lg-2"></div>
                                 </div>
                             </div>
+-->
+<!--
                             <div class="form-group">
                                 <div class="row">
                                     <div class="col-lg-2"></div>
@@ -88,6 +97,7 @@
                                     <div class="col-lg-2"></div>
                                 </div>
                             </div>						
+-->
 							<div class="form-group">
                                 <div class="row">
                                     <div class="col-lg-2"></div>

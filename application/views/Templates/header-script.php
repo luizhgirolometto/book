@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/font-awesome.min.css">    
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/animate.css">
-<!--	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/hover-min.css">-->
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/hover-min.css">
 <!-- Select2 -->
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/select2.min.css">
 <!-- Theme style -->

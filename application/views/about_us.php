@@ -26,7 +26,7 @@
     <div class="col-lg-1"></div>
     <div class="col-lg-10">
         <p><?php if($this->lang->line('about_A3')){ ?><?php echo $this->lang->line('about_A3'); }else{ ?>see their availability in real time, and instantly you book an appointment to trav & eacute; s book My Doc .com shareware or freeware book My Doc for iPhone or Android. By revealing the hidden supply quotations, book My Doc helping senior RIVER patients to have access to the care & oacute; n in s & oacute; the 24 - to 72 hours. Product m & aacute; recent s of CO-& iacute; a, book My Doc Check-In, allows patients to fill their tr & aacute; limits on L & iacute; nea before his appointment, and a version & oacute; n espa TODDLER language; ol called my book Doc in Spain TODDLER ol also & eacute; n est & aacute; available. <?php } ?></p>
-        <h5><a href=""><?php if($this->lang->line('about_A7')){ ?><?php echo $this->lang->line('about_A7'); }else{ ?>Read more<?php } ?><i class="fa fa-angle-double-right"></i> </a></h5>
+<!--        <h5><a href=""><?php if($this->lang->line('about_A7')){ ?><?php echo $this->lang->line('about_A7'); }else{ ?>Read more<?php } ?><i class="fa fa-angle-double-right"></i> </a></h5>-->
     </div>
     <div class="col-lg-1"></div>
 </div>
