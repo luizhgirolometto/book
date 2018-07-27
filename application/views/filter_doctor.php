@@ -12,10 +12,15 @@
 <div class="container-fluid srch-patient-log" >
     <div class="container">
         <div class="row">
+            <div class="col-lg-12">
+                <div class="doctor">
+                    <h4><?php if($this->lang->line('doctorfilter_slide_A12')){ ?><?php echo $this->lang->line('doctorfilter_slide_A12'); }else{ ?>Doctors near by You<?php } ?></h4>
+                </div>
+            </div>
             <div class="col-lg-12 srch-main">			
 				<form role="form" action="" method="post"  id="form_doctor" class="form_doctor formap" enctype="multipart/form-data">
 					<div class="row">
-						<div class="col-lg-10">
+						<div class="col-lg-12">
 							<div class="row row-frm">
 								<div class="col-lg-4">							
 									<div class="form-group">
@@ -39,39 +44,9 @@
 										</select>
 									</div>
 								</div>
-								<div class="col-lg-4">
-									<div class="form-group">
-										<label for="exampleSelect1"><?php if($this->lang->line('doctorfilter_slide_A5')){ ?><?php echo $this->lang->line('doctorfilter_slide_A5'); }else{ ?>Reason<?php } ?></label>
-										<select    name="visitation" class="form-control filter-field" id="reason_dropdown" required =" " >
-											<option selected="selected" value="-1"><?php if($this->lang->line('doctorfilter_slide_A6')){ ?><?php echo $this->lang->line('doctorfilter_slide_A6'); }else{ ?>Select reason<?php } ?></option>
-											<?php if(!empty($reasons) and isset($reasons)) { foreach($reasons as $row_reason){$selected = ($post_data['visitation'] == $row_reason->id ? "selected" : "" ); ?>
-											<option value="<?php echo $row_reason->id;?>" <?php echo $selected; ?>><?php echo $row_reason->name;?></option> 
-											<?php } } ?>								 
-										</select> 
-									</div>
-								</div>																
-								<div class="col-lg-4">
-									<div class="form-group">
-										<label for="exampleSelect1"><?php if($this->lang->line('doctorfilter_slide_A7')){ ?><?php echo $this->lang->line('doctorfilter_slide_A7'); }else{ ?>Insurance<?php } ?></label>
-										<select    name="insurance" class="form-control filter-field" id="exampleSelect1" required =" " >
-											<option selected="selected" value=""><?php if($this->lang->line('doctorfilter_slide_A8')){ ?><?php echo $this->lang->line('doctorfilter_slide_A8'); }else{ ?>Select Insurance<?php } ?></option>
-											<?php if(!empty($insurance) and isset($insurance)) { foreach($insurance as $row_insurance){ $selected = ($post_data['insurance'] == $row_insurance->id ? "selected" : "" ); ?>
-											<option value="<?php echo $row_insurance->id;?>" <?php echo $selected; ?>><?php echo $row_insurance->insurance_name;?></option> 
-											<?php } } ?>
-										</select> 
-									</div>
-								</div>
-								<div class="col-lg-4">
-									<div class="form-group">
-										<label for="exampleSelect1"><?php if($this->lang->line('doctorfilter_slide_A9')){ ?><?php echo $this->lang->line('doctorfilter_slide_A9'); }else{ ?>Language<?php } ?></label>
-										 <select    name="language" class="form-control filter-field" id="exampleSelect1" required =" " >
-											<option selected="selected" value=""><?php if($this->lang->line('doctorfilter_slide_A10')){ ?><?php echo $this->lang->line('doctorfilter_slide_A10'); }else{ ?>Select Language<?php } ?></option>
-											<?php if(!empty($tab_languages) and isset($tab_languages)) { foreach($tab_languages as $row_language){ $selected = ($post_data['language'] == $row_language->id ? "selected" : "" );  ?>
-											<option value="<?php echo $row_language->id;?>" <?php echo $selected; ?>><?php echo $row_language->language_name;?></option> 
-											<?php } }  ?>                            
-										</select> 
-									</div>
-								</div>
+																								
+								
+								
 								<div class="col-lg-4">
 									<div class="form-group">
 										<label for="exampleSelect1"><?php if($this->lang->line('doctorfilter_slide_A11')){ ?><?php echo $this->lang->line('doctorfilter_slide_A11'); }else{ ?>Gender<?php } ?></label>
@@ -83,20 +58,18 @@
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="col-lg-2">
-							<div class="form-group">
-								<button type="submit" class="btn btn-primary btn-pat"><img src="<?php echo base_url(); ?>assets/images/patient-login/10.png"> </button>
-							</div>
-						</div>
+						</div>                        						
 					</div>
+                    <div class="row">
+                        <div class="col-lg-12 row-pat">
+							<div class="form-group">
+								<button type="submit" class="btn btn-primary btn-pat"><img src="<?php echo base_url(); ?>assets/images/patient-login/10.png"> Buscar </button>
+							</div>
+						</div>                        
+                    </div>
 				</form>
             </div>
-            <div class="col-lg-12">
-                <div class="doctor">
-                    <h4><span><img src="<?php echo base_url(); ?>assets/images/patient-login/11.png" > </span><?php if($this->lang->line('doctorfilter_slide_A12')){ ?><?php echo $this->lang->line('doctorfilter_slide_A12'); }else{ ?>Doctors near by You<?php } ?></h4>
-                </div>
-            </div>
+
         </div>
     </div>
 </div>
@@ -111,10 +84,12 @@
 </div>
 <!--doctor-->
 <div class="container">
+<!--
     <div class="doctor-sub">
 		<h3><img src="<?php echo base_url(); ?>assets/images/patient-login/12.png"  ></h3>
         <h4><?php if($this->lang->line('doctorfilter_slide_A13')){ ?><?php echo $this->lang->line('doctorfilter_slide_A13'); }else{ ?>Select a Speciality Doctor <?php } ?></h4>
     </div>
+-->
     <div class="doctor-pat-srch">     
         <div class="row">
 			<input type="hidden" value='<?php echo $actual_data;?>' id="actual_data">
