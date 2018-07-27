@@ -37,7 +37,8 @@
 			}
 			autocompleteDoc[name] = new google.maps.places.Autocomplete($('#'+name+' .autocompleteDoc')[0], { types: ['geocode'] });	
 			google.maps.event.addListener(autocompleteDoc[name], 'place_changed', function() {							
-				var place = autocompleteDoc[name].getPlace();							
+				var place = autocompleteDoc[name].getPlace();
+                console.log(place);
 				document.getElementById('lat_doc').value = place.geometry.location.lat();
 				document.getElementById('lon_doc').value = place.geometry.location.lng();									
 			});

@@ -902,7 +902,8 @@ float: left;
 }
 
 .contact-form {
-    margin: 100px 0;
+/*    margin: 100px 0;*/
+    padding-top: 70px;
 }
 
 .usr-commet {
@@ -1285,8 +1286,9 @@ float: left;
 }
 
 .srch-patient-log {
-    background: #a01f62;
+    background: #fff;
     margin: -20px 0;
+    padding-top: 100px;
 }
 option {
     color: #000;
@@ -1296,10 +1298,12 @@ option {
     background-color: transparent;
 }
 .srch-patient-log .form-group label {
-    color: #fff;
-    font-size: 15px;
-    font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
+    color: #af212a;
+    font-size: 17px;
+/*    font-weight: 400;*/
+    font-family: 'Montserrat';
+    font-style: oblique;
+    font-weight: bold;
 }
 
 .srch-patient-log .form-group select{
@@ -1308,13 +1312,10 @@ option {
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
+    border: 1px solid #af212a;
+    border-radius: 15px 15px 15px 15px;
 }
 
-.btn-pat {
-    background-color: transparent;
-    border-color:transparent;
-    padding: 70px 0;
-}
 
 .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
     color: #fff;
@@ -1340,9 +1341,11 @@ option {
 
 .doctor h4 {
     text-align: center;
-    color: #fff;
+    color: #af212a;
     font-weight: 700;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat' !important;
+    font-size: 40px;
+};
     margin: 0px 0 30px 0;
 }
 .doctor h4  img {
@@ -2728,7 +2731,19 @@ right: 10px;
 .btn-pat {
     background-color: transparent !important;
     border-color:transparent !important;
-    padding: 70px 0;
+    padding: 45px;
+    color: #838383;
+    font-size: 30px;
+    font-size: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;    
+    border-radius: 8px;
+    
+    
+}
+
+.row-pat{
+   text-align: center; 
 }
 .btn-pat:focus{
 	 background-color: transparent !important;

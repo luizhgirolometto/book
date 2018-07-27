@@ -63,6 +63,7 @@
 /* === filter results === */
 	/* === Doctor Lock === */
 	function filter_results() {
+        console.log('O filtro é aqui');
 		var value = $('.form_doctor').serialize();
 		$.ajax({
 			type: "POST",
