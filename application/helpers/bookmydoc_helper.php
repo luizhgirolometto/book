@@ -76,7 +76,7 @@
 		if($value['working_time']=='none'){
 			$calendar_html .= '<div class="error1" >
 				<p style="margin:0 auto;padding:20px">
-				No availability these days</p></div>';
+				Não há disponibilidade nestes dias</p></div>';
 		}else{						
 			for($i=0;$i<$columns;$i++){
 				$day_C = strtolower(date('D', strtotime($Day. ' + '.$i.' days')));

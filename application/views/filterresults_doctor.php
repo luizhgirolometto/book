@@ -9,6 +9,7 @@
 if(!empty($doctors)) {
 	if(isset($doctors)) {		
 			?>
+            <div class="row">
 			<div class="col-lg-6" style="padding-right: 0px;">	
 			<?php foreach($doctors as $doctor_detail){ ?>
 				<div class="evt-br doctor">					
@@ -27,7 +28,7 @@ if(!empty($doctors)) {
 								<div class="col-lg-1">
                                     <img src="<?php echo base_url(); ?>assets/images/patient-login/13.png" />
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-6">
                                     <h6> <?php echo $doctor_detail->city_name;?>,<?php echo $doctor_detail->state_name;?>, <?php echo $doctor_detail->country_name;?> <?php echo $doctor_detail->doctor_office_zip;?></h6>
                                 </div>
                             </div>
@@ -35,23 +36,26 @@ if(!empty($doctors)) {
                     </div>
                     <div class="view-prf">
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-6">
                                 <img src="<?php echo base_url(); ?>assets/images/patient-login/14.png" />
-                                <h6><a href ="<?php echo base_url(); ?>Doctor/Profile/<?php echo $doctor_detail->id; ?>"><?php if($lgfdviewprofile){ echo $lgfdviewprofile; }else { ?>View Profile<?php } ?></a></h6>
+                                <h6><a href ="<?php echo base_url(); ?>Doctor/Perfil/<?php echo $doctor_detail->id; ?>"><?php if($lgfdviewprofile){ echo $lgfdviewprofile; }else { ?>Ver Perfil<?php } ?></a></h6>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-6">
                                 <img src="<?php echo base_url(); ?>assets/images/patient-login/15.png" />
-                                <h6><a class ="modalbookapp" href ="javascript:void(0);" id="<?php echo $doctor_detail->id; ?>" ><?php if($lgfdbookonline){ echo $lgfdbookonline; }else { ?>Book Online<?php } ?></a></h6>
+                                <h6><a class ="modalbookapp" href ="javascript:void(0);" id="<?php echo $doctor_detail->id; ?>" ><?php if($lgfdbookonline){ echo $lgfdbookonline; }else { ?>Agende Online<?php } ?></a></h6>
                             </div>
                         </div>
 					</div>
                 </div>
 			<?php } ?>
 			</div>
-			<div class="col-lg-5 evt-br-1" id="calendar_blk">
-				<?php foreach($doctors as $doctor_detail){ 
-				pull_doccalendar($doctor_detail->id);  } ?>								 
-			</div>
+            <div class="col-lg-6" style="padding-left: 0px;">
+                <div class="evt-br-1" id="calendar_blk">
+                <?php foreach($doctors as $doctor_detail){ 
+                    pull_doccalendar($doctor_detail->id);  } ?>
+                </div>
+            </div>
+        </div>                
 		<?php  } } else { ?>
 			<div class="error"><h1><?php if($lgfderror){ echo $lgfderror; }else { ?>Sorry, No records found. Please try with different keywords.<?php } ?> </h1></div>
 			<div class="clearfix"></div>												

@@ -328,11 +328,11 @@ class Doctor_Model extends CI_Model
                         <div class="row">
                             <div class="col-lg-4">
                                 <img src="'.$s.'assets/images/patient-login/14.png" />								
-                                <h6><a href ="'.$s.'Doctor/Profile/'.$key.'">View Profile</a></h6>
+                                <h6><a href ="'.$s.'Doctor/Perfil/'.$key.'">Ver Perfil</a></h6>
                             </div>
                             <div class="col-lg-4">
                                 <img src="'.$s.'assets/images/patient-login/15.png" />
-                                <h6><a href ="javascript:void(0);" data-toggle="modal" data-target="#myModal" modal_target="'.$key.'">Book Online</a></h6>
+                                <h6><a href ="javascript:void(0);" data-toggle="modal" data-target="#myModal" modal_target="'.$key.'">Agende Online</a></h6>
                             </div>
                         </div>
                     </div>                

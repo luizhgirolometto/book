@@ -24,7 +24,7 @@
                 </ul>
                 <div class="tab-content">
                     <div id="home" class="tab-pane fade show active">
-                       <form role="form" action="<?php echo base_url();?>Doctor/Search" method="post" class="animated fadeIn" enctype="multipart/form-data"> 
+                       <form role="form" action="<?php echo base_url();?>Doctor/Busca" method="post" class="animated fadeIn" enctype="multipart/form-data"> 
                             <div class="form-group">							
                                 <div class="row">
                                     <div class="col-lg-2"></div>								

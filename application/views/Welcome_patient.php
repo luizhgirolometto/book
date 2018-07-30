@@ -32,7 +32,7 @@
 								<h4><?php if($this->lang->line('patient_tab_B')){ ?><?php echo $this->lang->line('patient_tab_B'); }else{ ?>More than 5 million patients use bookmydoc to find doctors  every month.Let them book appointments with use instanly<?php } ?></h4>
 							</div>
 							<div class="col-lg-4">
-								<a href = "<?php echo base_url(); ?>Doctor/Search">
+								<a href = "<?php echo base_url(); ?>Doctor/Busca">
 									<div class="search-lg-mn">
 										<img src="<?php echo base_url(); ?>assets/images/patient-login/sr.png"  />
 										<span><?php if($this->lang->line('patient_tab_C')){ ?><?php echo $this->lang->line('patient_tab_C'); }else{ ?>Search now<?php } ?></span>
@@ -123,7 +123,7 @@
 										</div>
 										<div class="col-lg-4">
 											<div class="rated">
-												<a href ="<?php echo base_url(); ?>Doctor/Profile/<?php echo $pat_detail->id; ?>">
+												<a href ="<?php echo base_url(); ?>Doctor/Perfil/<?php echo $pat_detail->id; ?>">
 												<h3><span><img src="<?php echo base_url(); ?>assets/images/patient-login/5.png"   alt="" /></span><?php if($this->lang->line('patient_tab_D5')){ ?><?php echo $this->lang->line('patient_tab_D5'); }else{ ?>Book again<?php } ?></h3></a>
 											</div>
 										</div>

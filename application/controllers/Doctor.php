@@ -193,7 +193,7 @@ class Doctor extends CI_Controller {
 	
 	 */
 	/* Doctor Search Pool Method */
-	public function Search(){
+	public function Busca(){
 		$city_id = $this->uri->segment(3);
 		if($_POST){
 			if(isset($_POST) && !empty($_POST)){
@@ -295,7 +295,7 @@ class Doctor extends CI_Controller {
 		}
 	}
 	/*  === Doctor Profile === */
-	public function Profile(){	
+	public function Perfil(){	
 		$id = $this->uri->segment(3);		
 		$map_template['specialtydetails'] =$this->Doctor_Model->get_specialties();
 		$map_template['view_galpic'] =$this->Doctor_Model->get_singlegalpic($id);		

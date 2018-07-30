@@ -5,9 +5,17 @@
 	<link rel="icon" href="<?php echo base_url(); ?>admin/<?php echo $settings->favicon; ?>" type="image/jpg" sizes="16x16">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>	
 
+
+
+
+<!--Bootstrap>-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+
 <!--	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	
+
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/font-awesome.min.css">    
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/animate.css">
@@ -24,6 +32,7 @@
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/jquery.timepicker.css">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/datepicker.css">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
+
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/head/freelancer.min.css">
 
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/responsive.css">
@@ -41,4 +50,4 @@
 
 
  <!-- Plugin CSS -->
-    <link href="<?php echo base_url(); ?>assets/css/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+<!--    <link href="<?php echo base_url(); ?>assets/css/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">-->

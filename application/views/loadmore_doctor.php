@@ -49,11 +49,11 @@
                         <div class="row">
                             <div class="col-lg-4">
                                 <img src="<?php echo base_url(); ?>assets/images/patient-login/14.png" />
-                                <h6><a href ="<?php echo base_url(); ?>Doctor/Profile/<?php echo $doctor_detail->id; ?>"><?php if($lgfdviewprofile){ echo $lgfdviewprofile; }else { ?>View Profile<?php } ?></a></h6>
+                                <h6><a href ="<?php echo base_url(); ?>Doctor/Perfil/<?php echo $doctor_detail->id; ?>"><?php if($lgfdviewprofile){ echo $lgfdviewprofile; }else { ?>Ver Perfil<?php } ?></a></h6>
                             </div>
                             <div class="col-lg-4">
                                 <img src="<?php echo base_url(); ?>assets/images/patient-login/15.png" />
-                                <h6><a class ="modalbookapp" href ="javascript:void(0);" id="<?php echo $doctor_detail->id; ?>" ><?php if($lgfdbookonline){ echo $lgfdbookonline; }else { ?>Book Online<?php } ?></a></h6>
+                                <h6><a class ="modalbookapp" href ="javascript:void(0);" id="<?php echo $doctor_detail->id; ?>" ><?php if($lgfdbookonline){ echo $lgfdbookonline; }else { ?>Agende Online<?php } ?></a></h6>
                             </div>
                         </div>
                     </div>
