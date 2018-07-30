@@ -74,7 +74,7 @@
 				console.log(data.map_data);
 				ViewCustInGoogleMap(data.map_data, true);
 				console.log(data.map_data);																			
-					$('html, body').animate({scrollTop:$('.doctor-sub').offset().top}, 'slow');
+					//$('html, body').animate({scrollTop:$('.doctor-sub').offset().top}, 'slow');
 					$('.evnt-mn.doctor').html(data['temp']);
 			},			
 			error: function(data) {				                 

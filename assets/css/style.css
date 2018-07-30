@@ -1446,10 +1446,10 @@ color: #af212a;
 }
 
 .evt-br {
-    border: 1px solid #b9b9b9;
-    min-height: 195px;
-    border-right: none;
-    padding-left: 30px;
+    border: 4px solid #b9b9b9;
+    border-right-color: rgb(185, 185, 185);
+    border-right-style: solid;
+    border-right-width: 4px;
 }
 
 .evt-br-1 {

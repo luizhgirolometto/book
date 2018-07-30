@@ -459,7 +459,8 @@
 			miniCalendar(boolKey,id,'next',div_id,currentdate);
 		});	
 		/* === Prev === */
-		$(document).on("click",".previouscalapp", function(){		
+		$(document).on("click",".previouscalapp", function(){
+            console.log('previus day');
 			var id= this.id;
 			var div_id= $(this).attr("data-div");
 			var currentdate= $(this).attr("data-date");
@@ -688,7 +689,7 @@
              }
 		});
 	}); 									
-	/* === book online calendar === */
+	/* === Agende Online calendar === */
 	$(document).on("click",".modalbookapp", function(){
 		var id= this.id;
 		$.ajax({
