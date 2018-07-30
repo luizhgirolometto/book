@@ -5,7 +5,7 @@ $admin_detail = pull_admin();
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            View Profile Details
+            Ver Perfil Details
             <small></small>
           </h1>
     
@@ -35,7 +35,7 @@ $admin_detail = pull_admin();
               <!-- general form elements -->
               <div class="box">
                 <div class="box-header with-border">
-                  <h3 class="box-title">View Profile Details</h3>
+                  <h3 class="box-title">Ver Perfil Details</h3>
                 </div><!-- /.box-header -->
                 <!-- form start -->
                  

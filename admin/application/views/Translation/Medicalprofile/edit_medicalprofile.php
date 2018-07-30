@@ -132,13 +132,13 @@
                           </div> 
          <!--Home page Tab 3-->
 		  <div class="form-group has-feedback">
-                            <label for="exampleInputEmail1">View Profile</label>
-                            <input type="text" name="lang['medicalprofile_slide_A9']" value="<?php if(!empty($lang['medicalprofile_slide_A7'])): echo $lang['medicalprofile_slide_A7']; endif;?>" placeholder="View Profile" class="form-control required regcom"  required="" >
+                            <label for="exampleInputEmail1">Ver Perfil</label>
+                            <input type="text" name="lang['medicalprofile_slide_A9']" value="<?php if(!empty($lang['medicalprofile_slide_A7'])): echo $lang['medicalprofile_slide_A7']; endif;?>" placeholder="Ver Perfil" class="form-control required regcom"  required="" >
                             <span class="glyphicon  form-control-feedback"></span>
                           </div> 
 						    <div class="form-group has-feedback">
-                            <label for="exampleInputEmail1">Book Online</label>
-                            <input type="text" name="lang['medicalprofile_slide_A10']" value="<?php if(!empty($lang['medicalprofile_slide_A8'])): echo $lang['medicalprofile_slide_A8']; endif;?>" placeholder="Book Online" class="form-control required regcom"  required="" >
+                            <label for="exampleInputEmail1">Agende Online</label>
+                            <input type="text" name="lang['medicalprofile_slide_A10']" value="<?php if(!empty($lang['medicalprofile_slide_A8'])): echo $lang['medicalprofile_slide_A8']; endif;?>" placeholder="Agende Online" class="form-control required regcom"  required="" >
                             <span class="glyphicon  form-control-feedback"></span>
                           </div> 
 						    <div class="form-group has-feedback">

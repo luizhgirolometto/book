@@ -132,14 +132,14 @@
                             <span class="glyphicon  form-control-feedback"></span>
                           </div> 
 						  <div class="form-group has-feedback">
-                            <label for="exampleInputEmail1">View Profile</label>
-                            <input type="text" name="lang['doctorfilter_slide_A14']" placeholder="View Profile" class="form-control required regcom"  required="">
+                            <label for="exampleInputEmail1">Ver Perfil</label>
+                            <input type="text" name="lang['doctorfilter_slide_A14']" placeholder="Ver Perfil" class="form-control required regcom"  required="">
                             <span class="glyphicon  form-control-feedback"></span>
                           </div> 
 					<!---Home page Tab 4-->  
 						 <div class="form-group has-feedback">
-                            <label for="exampleInputEmail1">Book Online</label>
-                            <input type="text" name="lang['doctorfilter_slide_A15']" placeholder="Book Online" class="form-control required regcom"  required="">
+                            <label for="exampleInputEmail1">Agende Online</label>
+                            <input type="text" name="lang['doctorfilter_slide_A15']" placeholder="Agende Online" class="form-control required regcom"  required="">
                             <span class="glyphicon  form-control-feedback"></span>
                           </div>
 						   <div class="form-group has-feedback">

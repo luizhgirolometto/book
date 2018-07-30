@@ -519,13 +519,13 @@
                             <span class="glyphicon  form-control-feedback"></span>
                           </div>
 						  <div class="form-group has-feedback">
-                            <label for="exampleInputEmail1"> View Profile</label>
-                            <input type="text" name="lgfdviewprofile" placeholder="View Profile" class="form-control required regcom" >
+                            <label for="exampleInputEmail1"> Ver Perfil</label>
+                            <input type="text" name="lgfdviewprofile" placeholder="Ver Perfil" class="form-control required regcom" >
                             <span class="glyphicon  form-control-feedback"></span>
                           </div>
 						  <div class="form-group has-feedback">
-                            <label for="exampleInputEmail1"> Book Online</label>
-                            <input type="text" name="lgfdbookonline" placeholder="Book Online" class="form-control required regcom" >
+                            <label for="exampleInputEmail1"> Agende Online</label>
+                            <input type="text" name="lgfdbookonline" placeholder="Agende Online" class="form-control required regcom" >
                             <span class="glyphicon  form-control-feedback"></span>
                           </div>
 						  <div class="form-group has-feedback">
